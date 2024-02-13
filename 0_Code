@@ -1,0 +1,169 @@
+## Analyses performed on UC Davis Peloton Cluster ##
+
+##########################
+# Download and clean data
+##########################
+
+cd /home/dgold/23_Clams_Trinity/0_Data
+# Download Data
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907720
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907721
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907722
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907723
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907724
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907725
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907726
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907727
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907729
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907731
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907733
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907734
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907735
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907736
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907740
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907741
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907742
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907743
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907728
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907730
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907732
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907737
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907738
+~/Programs/sratoolkit.2.10.5-centos_linux64/bin/fasterq-dump -e 8 SRR25907739
+
+# unzip the data
+cd /home/dgold/23_Clams_Trinity/0_Data
+for i in *fastq; do
+	gzip $i;
+done
+
+########################################################################
+# Run Trinity (performed in two batches because of computational limits
+########################################################################
+
+# Part 1
+cd /home/dgold/23_Clams_Trinity/0_Data
+module load trinity # v.2.15.1
+module load samtools # v.1.16.1
+module load bowtie2 # 2.4.2
+module load salmon # v.1.10.1
+Trinity --seqType fq --max_memory 250G \
+--left SRR25907720_1.fastq.gz,SRR25907721_1.fastq.gz,SRR25907722_1.fastq.gz,SRR25907723_1.fastq.gz,SRR25907724_1.fastq.gz,SRR25907725_1.fastq.gz,SRR25907726_1.fastq.gz,SRR25907727_1.fastq.gz,SRR25907728_1.fastq.gz,SRR25907729_1.fastq.gz,SRR25907730_1.fastq.gz,SRR25907731_1.fastq.gz \
+--right SRR25907720_2.fastq.gz,SRR25907721_2.fastq.gz,SRR25907722_2.fastq.gz,SRR25907723_2.fastq.gz,SRR25907724_2.fastq.gz,SRR25907725_2.fastq.gz,SRR25907726_2.fastq.gz,SRR25907727_2.fastq.gz,SRR25907728_2.fastq.gz,SRR25907729_2.fastq.gz,SRR25907730_2.fastq.gz,SRR25907731_2.fastq.gz \
+--output trinity_output_pt1 --full_cleanup \
+--CPU 30
+
+# Part 2
+cd /home/dgold/23_Clams_Trinity/0_Data
+module load trinity # v.2.15.1
+module load samtools # v.1.16.1
+module load bowtie2 # 2.4.2
+module load salmon # v.1.10.1
+Trinity --seqType fq --max_memory 250G \
+--left SRR25907731_1.fastq.gz,SRR25907732_1.fastq.gz,SRR25907733_1.fastq.gz,SRR25907734_1.fastq.gz,SRR25907735_1.fastq.gz,SRR25907736_1.fastq.gz,SRR25907737_1.fastq.gz,SRR25907738_1.fastq.gz,SRR25907739_1.fastq.gz,SRR25907740_1.fastq.gz,SRR25907741_1.fastq.gz,SRR25907742_1.fastq.gz,SRR25907743_1.fastq.gz  \
+--right SRR25907731_2.fastq.gz,SRR25907732_2.fastq.gz,SRR25907733_2.fastq.gz,SRR25907734_2.fastq.gz,SRR25907735_2.fastq.gz,SRR25907736_2.fastq.gz,SRR25907737_2.fastq.gz,SRR25907738_2.fastq.gz,SRR25907739_2.fastq.gz,SRR25907740_2.fastq.gz,SRR25907741_2.fastq.gz,SRR25907742_2.fastq.gz,SRR25907743_2.fastq.gz  \
+--output trinity_output_pt2 --full_cleanup \
+--CPU 30
+
+####################################
+# Remove duplicate reads with CD-HIT
+####################################
+
+# Concatenate data
+cd /home/dgold/23_Clams_Trinity/1_Trinity_Output
+sed -i 's/>/>T1_/g' trinity_output_pt1.Trinity.fasta
+sed -i 's/>/>T2_/g' trinity_output_pt2.Trinity.fasta
+sed -i 's/ .*//' trinity_output_pt1.Trinity.fasta
+sed -i 's/ .*//' trinity_output_pt2.Trinity.fasta
+cat trinity_output_pt1.Trinity.fasta trinity_output_pt2.Trinity.fasta > Trinity.Complete.fasta
+
+# Run CD-HIT
+module load cdhit # v.4.8.1
+cd-hit-est -o cdhit -c 0.98 -i Trinity.Complete.fasta \
+-p 1 -d 0 -b 3 -T 10 -M 0
+
+#################################################################
+# Map data back to transcriptome and filter low-read transcripts
+#################################################################
+
+# Perform mapping with Salmon
+cd /home/dgold/23_Clams_Trinity/2_Mapping
+module load trinity # v.2.15.1
+module load samtools # v.1.16.1
+module load salmon # v.1.10.1
+align_and_estimate_abundance.pl \
+--transcripts /home/dgold/23_Clams_Trinity/1_Trinity_Output/cdhit \
+--seqType fq \
+--left ../0_Data/SRR25907720_1.fastq.gz,../0_Data/SRR25907721_1.fastq.gz,../0_Data/SRR25907722_1.fastq.gz,../0_Data/SRR25907723_1.fastq.gz,../0_Data/SRR25907724_1.fastq.gz,../0_Data/SRR25907725_1.fastq.gz,../0_Data/SRR25907726_1.fastq.gz,../0_Data/SRR25907727_1.fastq.gz,../0_Data/SRR25907728_1.fastq.gz,../0_Data/SRR25907729_1.fastq.gz,../0_Data/SRR25907730_1.fastq.gz,../0_Data/SRR25907731_1.fastq.gz,../0_Data/SRR25907732_1.fastq.gz,../0_Data/SRR25907733_1.fastq.gz,../0_Data/SRR25907734_1.fastq.gz,../0_Data/SRR25907735_1.fastq.gz,../0_Data/SRR25907736_1.fastq.gz,../0_Data/SRR25907737_1.fastq.gz,../0_Data/SRR25907738_1.fastq.gz,../0_Data/SRR25907739_1.fastq.gz,../0_Data/SRR25907740_1.fastq.gz,../0_Data/SRR25907741_1.fastq.gz,../0_Data/SRR25907742_1.fastq.gz,../0_Data/SRR25907743_1.fastq.gz \
+--right ../0_Data/SRR25907720_2.fastq.gz,../0_Data/SRR25907721_2.fastq.gz,../0_Data/SRR25907722_2.fastq.gz,../0_Data/SRR25907723_2.fastq.gz,../0_Data/SRR25907724_2.fastq.gz,../0_Data/SRR25907725_2.fastq.gz,../0_Data/SRR25907726_2.fastq.gz,../0_Data/SRR25907727_2.fastq.gz,../0_Data/SRR25907728_2.fastq.gz,../0_Data/SRR25907729_2.fastq.gz,../0_Data/SRR25907730_2.fastq.gz,../0_Data/SRR25907731_2.fastq.gz,../0_Data/SRR25907732_2.fastq.gz,../0_Data/SRR25907733_2.fastq.gz,../0_Data/SRR25907734_2.fastq.gz,../0_Data/SRR25907735_2.fastq.gz,../0_Data/SRR25907736_2.fastq.gz,../0_Data/SRR25907737_2.fastq.gz,../0_Data/SRR25907738_2.fastq.gz,../0_Data/SRR25907739_2.fastq.gz,../0_Data/SRR25907740_2.fastq.gz,../0_Data/SRR25907741_2.fastq.gz,../0_Data/SRR25907742_2.fastq.gz,../0_Data/SRR25907743_2.fastq.gz \
+--samples_file samples_file.txt \
+--est_method salmon --prep_reference
+
+# Create a "quant-files" document 
+echo "/home/dgold/23_Clams_Trinity/2_Mapping/C1_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/C1_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/C2_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/C2_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/C3_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/C4_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OA2_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OA2_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OA3_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OA3_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OA4_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OA4_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OASH1_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OASH1_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OASH2_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OASH2_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OASH4_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/OASH4_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/SH1_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/SH2_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/SH2_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/SH3_B2/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/SH4_B1/quant.sf
+/home/dgold/23_Clams_Trinity/2_Mapping/SH4_B2/quant.sf" > quant_files.txt
+
+# Create abundance estimate matrices using Trinity wrapper
+module load trinity # v.2.15.1
+module load R # v.4.2.3
+abundance_estimates_to_matrix.pl \
+--est_method salmon \
+--gene_trans_map none \
+--quant_files quant_files.txt \
+--out_prefix Leukoma_RNASeq_Map \
+--name_sample_by_basedir
+
+# Remove transcripts with less than 1 count in the TMM normalized matrix
+filter_low_expr_transcripts.pl  \
+--matrix Leukoma_RNASeq_Map.isoform.TMM.EXPR.matrix \
+--transcripts /home/dgold/23_Clams_Trinity/1_Trinity_Output/cdhit \
+--min_expr_any 1 \
+--trinity_mode \
+> Leukoma.transcriptome-filtered.fasta
+
+# Retained 690933 / 2060605 = 33.53% of total transcripts.
+
+
+#########################################################
+# Predict isoforms from filtered data using Corset v.1.09
+#########################################################
+# https://github.com/Oshlack/Corset/
+
+cd /home/dgold/23_Clams_Trinity/3_Corset
+module load trinity # v.2.15.1
+module load samtools # v.1.16.1
+module load bowtie2 # 2.4.2
+module load salmon # v.1.10.1
+
+for filename in ../0_Data/*_1.fastq.gz ; do
+    # Extract the common prefix by removing the "_1.fastq.gz" suffix
+    prefix="${filename%_1.fastq.gz}"
+    # Form the names of the two files with "_1.fastq.gz" and "_2.fastq.gz" extensions
+    R1="$filename"
+    R2="${prefix}_2.fastq.gz"
+	salmon quant --index Trinity --libType A --dumpEq --hardFilter --skipQuant -1 $R1 -2 $R2 --output ${F}.out
+done
+
+# https://github.com/Oshlack/Corset/wiki/Example
