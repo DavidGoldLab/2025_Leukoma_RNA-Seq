@@ -158,12 +158,14 @@ module load bowtie2 # 2.4.2
 module load salmon # v.1.10.1
 
 for filename in ../0_Data/*_1.fastq.gz ; do
-    # Extract the common prefix by removing the "_1.fastq.gz" suffix
-    prefix="${filename%_1.fastq.gz}"
-    # Form the names of the two files with "_1.fastq.gz" and "_2.fastq.gz" extensions
-    R1="$filename"
-    R2="${prefix}_2.fastq.gz"
-	salmon quant --index Trinity --libType A --dumpEq --hardFilter --skipQuant -1 $R1 -2 $R2 --output ${F}.out
+	# Extract the common prefix by removing the "_1.fastq.gz" suffix
+	prefix="${filename%_1.fastq.gz}"
+	# Form the names of the two files with "_1.fastq.gz" and "_2.fastq.gz" extensions
+	R1="$filename"
+	R2="${prefix}_2.fastq.gz"
+	name=$(basename "$prefix")
+	salmon quant --index Trinity --libType A --dumpEq --hardFilter --skipQuant -1 $R1 -2 $R2 --output ${name}.out
 done
+
 
 # https://github.com/Oshlack/Corset/wiki/Example
