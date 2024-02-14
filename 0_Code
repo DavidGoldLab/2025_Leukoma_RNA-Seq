@@ -167,5 +167,39 @@ for filename in ../0_Data/*_1.fastq.gz ; do
 	salmon quant --index Trinity --libType A --dumpEq --hardFilter --skipQuant -1 $R1 -2 $R2 --output ${name}.out
 done
 
+# unzip eq_classes files
+gunzip SRR*/aux_info/eq_classes.txt.gz
+
+# Information used to write corset command
+# SAMPLE	GROUP	ID
+# SRR25907720	2	SH2_B2
+# SRR25907721	2	SH4_B1
+# SRR25907722	2	SH2_B1
+# SRR25907723	2	SH1_B1
+# SRR25907724	1	C4_B2
+# SRR25907725	1	C2_B2
+# SRR25907726	1	C1_B2
+# SRR25907727	4	OASH4_B2
+# SRR25907728	4	OASH2_B2
+# SRR25907729	4	OASH1_B2
+# SRR25907730	4	OASH4_B1
+# SRR25907731	1	C3_B1
+# SRR25907732	4	OASH2_B1
+# SRR25907733	4	OASH1_B1
+# SRR25907734	3	OA4_B2
+# SRR25907735	3	OA3_B2
+# SRR25907736	3	OA2_B2
+# SRR25907737	3	OA4_B1
+# SRR25907738	3	OA3_B1
+# SRR25907739	3	OA2_B1
+# SRR25907740	2	SH4_B2
+# SRR25907741	2	SH3_B2
+# SRR25907742	1	C2_B1
+# SRR25907743	1	C1_B1
+
+# run corset
+corset-1.09-linux64/corset -g 2,2,2,2,1,1,1,4,4,4,4,1,4,4,3,3,3,3,3,3,2,2,1,1 \
+-n SH2_B2,SH4_B1,SH2_B1,SH1_B1,C4_B2,C2_B2,C1_B2,OASH4_B2,OASH2_B2,OASH1_B2,OASH4_B1,C3_B1,OASH2_B1,OASH1_B1,OA4_B2,OA3_B2,OA2_B2,OA4_B1,OA3_B1,OA2_B1,SH4_B2,SH3_B2,C2_B1,C1_B1 \
+-i salmon_eq_classes SRR*/aux_info/eq_classes.txt
 
 # https://github.com/Oshlack/Corset/wiki/Example
