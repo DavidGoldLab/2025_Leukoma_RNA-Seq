@@ -201,26 +201,37 @@ corset-1.09-linux64/corset -g 2,2,2,2,1,1,1,4,4,4,4,1,4,4,3,3,3,3,3,3,2,2,1,1 \
 -n SH2_B2,SH4_B1,SH2_B1,SH1_B1,C4_B2,C2_B2,C1_B2,OASH4_B2,OASH2_B2,OASH1_B2,OASH4_B1,C3_B1,OASH2_B1,OASH1_B1,OA4_B2,OA3_B2,OA2_B2,OA4_B1,OA3_B1,OA2_B1,SH4_B2,SH3_B2,C2_B1,C1_B1 \
 -i salmon_eq_classes SRR*/aux_info/eq_classes.txt
 
+# Remove sequences with no cluster ID
+	# 54997 transcripts lack a cluster ID - details provided in file "Trinity-Corset_Comparison.txt.gz"
+	# 635936 transcripts have a cluster ID
+	# List of transcripts with a cluster ID placed in a new text file "Corset_Gene_List.txt"
+module load samtools # v.1.16.1
+xargs samtools faidx ../2_Mapping/Leukoma.transcriptome-filtered.fasta < Corset_Gene_List.txt > Leukoma.transcriptome-corset.fasta
+
+# Check that all transcripts with cluster ID are in final fasta file
+grep -o ">" Leukoma.transcriptome-corset.fasta | wc -l
+	# 635936
+gzip Corset_Gene_List.txt
+
 ###############################
 # Differential gene expression
 ###############################
 
-mkdir 4_Differential_Expression_Analysis
-cd 4_Differential_Expression_Analysis
+cd /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis
 
 # Load packages
 module load trinity # v.2.15.1
 module load R # v.4.2.3
-module load salmon
+module load salmon # v.1.10.1
 
 # Copy necessary files
-cp ../2_Mapping/Leukoma.transcriptome-filtered.fasta ./
+cp ../3_Corset/Leukoma.transcriptome-corset.fasta ./
 cp ../3_Corset/clusters.txt ./
 cp ../2_Mapping/samples_file.txt ./
 
 # Redo mapping using vetted transcripts and corset "clusters.txt" file
 align_and_estimate_abundance.pl \
---transcripts Leukoma.transcriptome-filtered.fasta \
+--transcripts Leukoma.transcriptome-corset.fasta \
 --gene_trans_map clusters.txt \
 --seqType fq \
 --left ../0_Data/SRR25907720_1.fastq.gz,../0_Data/SRR25907721_1.fastq.gz,../0_Data/SRR25907722_1.fastq.gz,../0_Data/SRR25907723_1.fastq.gz,../0_Data/SRR25907724_1.fastq.gz,../0_Data/SRR25907725_1.fastq.gz,../0_Data/SRR25907726_1.fastq.gz,../0_Data/SRR25907727_1.fastq.gz,../0_Data/SRR25907728_1.fastq.gz,../0_Data/SRR25907729_1.fastq.gz,../0_Data/SRR25907730_1.fastq.gz,../0_Data/SRR25907731_1.fastq.gz,../0_Data/SRR25907732_1.fastq.gz,../0_Data/SRR25907733_1.fastq.gz,../0_Data/SRR25907734_1.fastq.gz,../0_Data/SRR25907735_1.fastq.gz,../0_Data/SRR25907736_1.fastq.gz,../0_Data/SRR25907737_1.fastq.gz,../0_Data/SRR25907738_1.fastq.gz,../0_Data/SRR25907739_1.fastq.gz,../0_Data/SRR25907740_1.fastq.gz,../0_Data/SRR25907741_1.fastq.gz,../0_Data/SRR25907742_1.fastq.gz,../0_Data/SRR25907743_1.fastq.gz \
