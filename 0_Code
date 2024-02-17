@@ -223,6 +223,7 @@ cd /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis
 module load trinity # v.2.15.1
 module load R # v.4.2.3
 module load salmon # v.1.10.1
+module load samtools # v.1.2.13
 
 # Copy necessary files
 cp ../3_Corset/Leukoma.transcriptome-corset.fasta ./
