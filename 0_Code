@@ -227,8 +227,11 @@ module load samtools # v.1.2.13
 
 # Copy necessary files
 cp ../3_Corset/Leukoma.transcriptome-corset.fasta ./
-cp ../3_Corset/clusters.txt ./
 cp ../2_Mapping/samples_file.txt ./
+
+# Reverse data in "clusters.txt" file
+	# gene_trans_map needs to be in format 'gene(tab)transcript'; clusters.txt is in format 'transcript(tab)gene'
+awk '{temp = $1; $1 = $2; $2 = temp; print}' ../3_Corset/clusters.txt > clusters.txt
 
 # Redo mapping using vetted transcripts and corset "clusters.txt" file
 align_and_estimate_abundance.pl \
