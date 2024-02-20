@@ -213,11 +213,11 @@ grep -o ">" Leukoma.transcriptome-corset.fasta | wc -l
 	# 635936
 gzip Corset_Gene_List.txt
 
-###############################
-# Differential gene expression
-###############################
+################
+# Final Mapping
+################
 
-cd /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis
+cd /home/dgold/23_Clams_Trinity/4_Final_Mapping
 
 # Load packages
 module load trinity # v.2.15.1
@@ -242,3 +242,30 @@ align_and_estimate_abundance.pl \
 --right ../0_Data/SRR25907720_2.fastq.gz,../0_Data/SRR25907721_2.fastq.gz,../0_Data/SRR25907722_2.fastq.gz,../0_Data/SRR25907723_2.fastq.gz,../0_Data/SRR25907724_2.fastq.gz,../0_Data/SRR25907725_2.fastq.gz,../0_Data/SRR25907726_2.fastq.gz,../0_Data/SRR25907727_2.fastq.gz,../0_Data/SRR25907728_2.fastq.gz,../0_Data/SRR25907729_2.fastq.gz,../0_Data/SRR25907730_2.fastq.gz,../0_Data/SRR25907731_2.fastq.gz,../0_Data/SRR25907732_2.fastq.gz,../0_Data/SRR25907733_2.fastq.gz,../0_Data/SRR25907734_2.fastq.gz,../0_Data/SRR25907735_2.fastq.gz,../0_Data/SRR25907736_2.fastq.gz,../0_Data/SRR25907737_2.fastq.gz,../0_Data/SRR25907738_2.fastq.gz,../0_Data/SRR25907739_2.fastq.gz,../0_Data/SRR25907740_2.fastq.gz,../0_Data/SRR25907741_2.fastq.gz,../0_Data/SRR25907742_2.fastq.gz,../0_Data/SRR25907743_2.fastq.gz \
 --samples_file samples_file.txt \
 --est_method salmon --prep_reference
+
+# Extract salmon quant files for "salmon.quant_files.txt"
+find . -maxdepth 2 -name "quant.sf" | tee salmon.quant_files.txt
+
+# Build Transcript and Gene Expression Matrices
+abundance_estimates_to_matrix.pl \
+--est_method salmon \
+--gene_trans_map clusters.txt \
+--name_sample_by_basedir \
+--quant_files salmon.quant_files.txt
+
+###################################
+# Differential Expression Analysis
+###################################
+
+cd /home/dgold/23_Clams_Trinity/5_DE_Gene_Expression
+
+# Load packages
+module load trinity # v.2.15.1
+module load R # v.4.2.3
+module load salmon # v.1.10.1
+module load samtools # v.1.2.13
+
+/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_DE_analysis.pl \
+--matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
+--method edgeR \
+--samples_file ../2_Mapping/samples_file.txt
