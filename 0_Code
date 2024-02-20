@@ -269,3 +269,9 @@ module load samtools # v.1.2.13
 --matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
 --method edgeR \
 --samples_file ../2_Mapping/samples_file.txt
+
+# Extracting and clustering differentially expressed transcripts
+
+cd edgeR.537991.dir
+/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix
