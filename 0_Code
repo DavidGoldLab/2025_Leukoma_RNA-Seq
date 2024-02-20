@@ -306,7 +306,7 @@ SH\tSH2_B1" > samples.txt
 # Extracting and clustering differentially expressed transcripts
 
 /usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
---matrix salmon.gene.TMM.EXPR.matrix \
+--matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
 --samples samples.txt
 
 
