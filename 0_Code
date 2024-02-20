@@ -276,10 +276,37 @@ module load samtools # v.1.2.13
 #############################################
 #############################################
 
+# Generate samples file
+
+echo -e "C\tC1_B1
+C\tC1_B2
+C\tC2_B1
+C\tC2_B2
+C\tC3_B1
+C\tC4_B2
+OA\tOA2_B1
+OA\tOA2_B2
+OA\tOA3_B1
+OA\tOA3_B2
+OA\tOA4_B1
+OA\tOA4_B2
+OASH\tOASH1_B1
+OASH\tOASH1_B2
+OASH\tOASH2_B1
+OASH\tOASH2_B2
+OASH\tOASH4_B1
+OASH\tOASH4_B2
+SH\tSH1_B1
+SH\tSH2_B2
+SH\tSH3_B2
+SH\tSH4_B1
+SH\tSH4_B2
+SH\tSH2_B1" > samples.txt
+
 # Extracting and clustering differentially expressed transcripts
 
 /usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
---matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix
---samples ../../2_Mapping/samples_file.txt
+--matrix salmon.gene.TMM.EXPR.matrix \
+--samples samples.txt
 
 
