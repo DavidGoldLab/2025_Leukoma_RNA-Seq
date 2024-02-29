@@ -1,8 +1,25 @@
 ## Analyses performed on UC Davis Peloton Cluster ##
 
-##########################
-# Download and clean data
-##########################
+# Programs used
+#	blast-plus v.2.13.0
+#	bowtie2 2.4.2
+#	corset v.1.09
+#	diamond v.2.0.15
+#	hmmer v.3.3.2
+#	infernal v.1.1.4
+#	R v.4.2.3
+#	salmon v.1.10.1
+#	samtools v.1.16.1
+#	SQLite v.3.45.1
+#	sratoolkit v.2.10.5
+#	transdecoder v.5.7.1
+#	trinity v.2.15.1
+
+################
+# Download data
+################
+
+# Requires sratoolkit (v.2.10.5)
 
 cd /home/dgold/23_Clams_Trinity/0_Data
 # Download Data
@@ -38,7 +55,7 @@ for i in *fastq; do
 done
 
 ########################################################################
-# Run Trinity (performed in two batches because of computational limits
+# Run Trinity (performed in two batches because of computational limits)
 ########################################################################
 
 # Part 1
@@ -65,9 +82,9 @@ Trinity --seqType fq --max_memory 250G \
 --output trinity_output_pt2 --full_cleanup \
 --CPU 30
 
-####################################
-# Remove duplicate reads with CD-HIT
-####################################
+#####################################################################
+# Combine Trinity assemblies and remove duplicate reads with CD-HIT
+#####################################################################
 
 # Concatenate data
 cd /home/dgold/23_Clams_Trinity/1_Trinity_Output
@@ -326,8 +343,7 @@ module load diamond # v.2.0.15
 module load hmmer # v.3.3.2
 module load infernal # v.1.1.4
 module load blast-plus # v.2.13.0
-
-
+module load conda
 
 # download Trinotate
 wget https://github.com/Trinotate/Trinotate/archive/refs/tags/Trinotate-v4.0.2.tar.gz
@@ -341,6 +357,11 @@ tar -xzf TransDecoder-v5.7.1.tar.gz
 wget https://www.sqlite.org/2024/sqlite-tools-linux-x64-3450100.zip
 unzip sqlite-tools-linux-x64-3450100.zip
 
+# Download eggnog-mapper
+wget https://github.com/eggnogdb/eggnog-mapper/archive/refs/tags/2.1.12.tar.gz
+tar -xzf 2.1.12.tar.gz
+PATH=$PATH:./eggnog-mapper-2.1.12/eggnogmapper/bin:./eggnog-mapper-2.1.12
+
 # Build Trinotate boilerplate sqlite database
 ./Trinotate-Trinotate-v4.0.2/Trinotate --create \
  --db myTrinotate.sqlite \
@@ -353,15 +374,24 @@ unzip sqlite-tools-linux-x64-3450100.zip
 ./TransDecoder-TransDecoder-v5.7.1/TransDecoder.Predict \
 -t ../3_Corset/Leukoma.transcriptome-corset.fasta
 
-# Initialize  Trinotate sqlite database with sequence data
+# gene_trans_map needs to be tab-delimited; make new version of "clusters.txt" 
+cp ../4_Final_Mapping/clusters.txt .
+sed -i 's/ /\t/g' clusters.txt
+
+# Initialize Trinotate sqlite database with sequence data
 ./Trinotate-Trinotate-v4.0.2/Trinotate \
  --db myTrinotate.sqlite --init \
- --gene_trans_map ../4_Final_Mapping/clusters.txt \
+ --gene_trans_map clusters.txt \
  --transcript_fasta ../3_Corset/Leukoma.transcriptome-corset.fasta \
- --transdecoder_pep <file>
+ --transdecoder_pep Leukoma.transcriptome-corset.fasta.transdecoder.pep
+
+# Run Trinotate Analyses
+./Trinotate-Trinotate-v4.0.2/Trinotate --db myTrinotate.sqlite --CPU 8 \
+ --transcript_fasta ../3_Corset/Leukoma.transcriptome-corset.fasta \
+ --transdecoder_pep Leukoma.transcriptome-corset.fasta.transdecoder.pep \
+ --trinotate_data_dir ./Data \
+ --run "swissprot_blastp swissprot_blastx pfam infernal EggnogMapper" \
+ --use_diamond 
 
 
-
-# Cleanup 
-rm *.tar.gz
 
