@@ -309,4 +309,59 @@ SH\tSH2_B1" > samples.txt
 --matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
 --samples samples.txt
 
+###############################
+# Annotate Genes with Trinotate
+###############################
+
+mkdir /home/dgold/23_Clams_Trinity/6_Trinotate
+mkdir /home/dgold/23_Clams_Trinity/6_Trinotate/Data
+cd /home/dgold/23_Clams_Trinity/6_Trinotate
+
+# Requires Trinotate (v.4.0.2)
+# Requires Transdecoder (v.5.7.1)
+# Requires SQLite (v.3.45.1)
+
+# Load modules
+module load diamond # v.2.0.15
+module load hmmer # v.3.3.2
+module load infernal # v.1.1.4
+module load blast-plus # v.2.13.0
+
+
+
+# download Trinotate
+wget https://github.com/Trinotate/Trinotate/archive/refs/tags/Trinotate-v4.0.2.tar.gz
+tar -xzf Trinotate-v4.0.2.tar.gz
+
+# Download TranscDecoder
+wget https://github.com/TransDecoder/TransDecoder/archive/refs/tags/TransDecoder-v5.7.1.tar.gz
+tar -xzf TransDecoder-v5.7.1.tar.gz
+
+# Download squlite binary
+wget https://www.sqlite.org/2024/sqlite-tools-linux-x64-3450100.zip
+unzip sqlite-tools-linux-x64-3450100.zip
+
+# Build Trinotate boilerplate sqlite database
+./Trinotate-Trinotate-v4.0.2/Trinotate --create \
+ --db myTrinotate.sqlite \
+ --trinotate_data_dir ./Data \
+ --use_diamond
+
+# Make protein models with Transdecoder
+./TransDecoder-TransDecoder-v5.7.1/TransDecoder.LongOrfs \
+-t ../3_Corset/Leukoma.transcriptome-corset.fasta
+./TransDecoder-TransDecoder-v5.7.1/TransDecoder.Predict \
+-t ../3_Corset/Leukoma.transcriptome-corset.fasta
+
+# Initialize  Trinotate sqlite database with sequence data
+./Trinotate-Trinotate-v4.0.2/Trinotate \
+ --db myTrinotate.sqlite --init \
+ --gene_trans_map ../4_Final_Mapping/clusters.txt \
+ --transcript_fasta ../3_Corset/Leukoma.transcriptome-corset.fasta \
+ --transdecoder_pep <file>
+
+
+
+# Cleanup 
+rm *.tar.gz
 
