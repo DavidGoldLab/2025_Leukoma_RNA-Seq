@@ -393,5 +393,45 @@ sed -i 's/ /\t/g' clusters.txt
  --run "swissprot_blastp swissprot_blastx pfam infernal EggnogMapper" \
  --use_diamond 
 
+# Generate the Trinotate Report
+./Trinotate-Trinotate-v4.0.2/Trinotate --db myTrinotate.sqlite --report > Leukoma_Trinotate_Report.tsv
 
+###
+###
+TBD
+###
+###
 
+#####################################################
+# Gene Ontology Enrichment using Trinotate and GOseq
+#####################################################
+https://github.com/trinityrnaseq/trinityrnaseq/wiki/Running-GOSeq
+
+cd /home/dgold/23_Clams_Trinity/6_Trinotate
+
+# Load packages
+module load trinity # v.2.15.1
+module load R # v.4.2.3
+
+# Extract GO assignments per gene
+ ${TRINOTATE_HOME}/util/extract_GO_assignments_from_Trinotate_xls.pl \
+                         --Trinotate_xls trinotate.xls \
+                         -G --include_ancestral_terms \
+                         > go_annotations.txt
+
+# Make 'factor_labeling.txt' file
+ factor (tab) gene_id 
+
+# Make 'gene.lengths.txt' file
+${TRINITY_HOME}/util/misc/fasta_seq_length.pl  Trinity.fasta > Trinity.fasta.seq_lens
+
+${TRINITY_HOME}/util/misc/TPM_weighted_gene_length.py  \
+         --gene_trans_map trinity_out_dir/Trinity.fasta.gene_trans_map \
+         --trans_lengths Trinity.fasta.seq_lens \
+         --TPM_matrix isoforms.TMM.EXPR.matrix > Trinity.gene_lengths.txt
+
+# Run GOseq
+ ${TRINITY_HOME}/Analysis/DifferentialExpression/run_GOseq.pl \
+                       --factor_labeling  factor_labeling.txt \
+                       --GO_assignments go_annotations.txt \
+                       --lengths gene.lengths.txt
