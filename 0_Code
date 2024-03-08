@@ -412,23 +412,27 @@ cd /home/dgold/23_Clams_Trinity/6_Trinotate
 # Load packages
 module load trinity # v.2.15.1
 module load R # v.4.2.3
+module load conda
 
 # Extract GO assignments per gene
- ${TRINOTATE_HOME}/util/extract_GO_assignments_from_Trinotate_xls.pl \
-                         --Trinotate_xls trinotate.xls \
-                         -G --include_ancestral_terms \
-                         > go_annotations.txt
+./Trinotate-Trinotate-v4.0.2/util/extract_GO_assignments_from_Trinotate_xls.pl \
+--Trinotate_xls Leukoma_Trinotate_Report.tsv \
+-G --include_ancestral_terms \
+> go_annotations.txt
 
 # Make 'factor_labeling.txt' file
  factor (tab) gene_id 
 
 # Make 'gene.lengths.txt' file
-${TRINITY_HOME}/util/misc/fasta_seq_length.pl  Trinity.fasta > Trinity.fasta.seq_lens
+/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/util/misc/fasta_seq_length.pl  \
+../4_Final_Mapping/Leukoma.transcriptome-corset.fasta > Trinity.fasta.seq_lens
 
-${TRINITY_HOME}/util/misc/TPM_weighted_gene_length.py  \
-         --gene_trans_map trinity_out_dir/Trinity.fasta.gene_trans_map \
-         --trans_lengths Trinity.fasta.seq_lens \
-         --TPM_matrix isoforms.TMM.EXPR.matrix > Trinity.gene_lengths.txt
+/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/util/misc/TPM_weighted_gene_length.py  \
+--gene_trans_map clusters.txt \
+--trans_lengths Trinity.fasta.seq_lens \
+--TPM_matrix ../4_Final_Mapping/salmon.isoform.TMM.EXPR.matrix > gene_lengths.txt
+
+## TBD ##
 
 # Run GOseq
  ${TRINITY_HOME}/Analysis/DifferentialExpression/run_GOseq.pl \
