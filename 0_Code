@@ -437,3 +437,45 @@ sort -u background.txt > tmp1 && mv tmp1 background.txt
  --GO_assignments go_annotations.txt \
  --lengths gene_lengths.txt \
  --background background.txt
+
+#########
+# Cleanup
+#########
+
+# Cleanup 0_Data
+cd 0_Data/
+# Remove large files (>100Mb)
+rm *
+
+# Cleanup 1_Trinity_Output
+cd ../1_Trinity_Output/
+# Remove large files (>100Mb)
+find ./ -type f -size +100M -delete
+
+# Cleanup 2_Mapping
+# zip "quant.sf" files
+for i in */quant.sf; do
+    tar -czvf "$i.tar.gz" --remove-files $i
+done
+# Remove large files (>100Mb)
+find ./ -type f -size +100M -delete
+
+# Cleanup 4_Final_Mapping
+cd ../4_Final_Mapping
+# Compress matrix files
+for i in salmon.*; do
+ tar -czvf "$i.tar.gz" --remove-files $i
+done
+# Delete isoform matrices
+rm salmon.isoform*
+# Compress "quant.sf" files
+for i in */quant.sf; do
+    tar -czvf "$i.tar.gz" --remove-files $i
+done
+# Compress "quant.sf.genes" files
+for i in */quant.sf.genes; do
+    tar -czvf "$i.tar.gz" --remove-files $i
+done
+# Remove large files (>100Mb)
+find ./ -type f -size +100M -delete
+
