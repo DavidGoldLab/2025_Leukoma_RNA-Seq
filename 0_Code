@@ -380,6 +380,7 @@ module load salmon # v.1.10.1
 module load samtools # v.1.2.13
 
 /share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_DE_analysis.pl \
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl
 --matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
 --method edgeR \
 --samples_file ../2_Mapping/samples_file.txt
@@ -437,12 +438,17 @@ tar -czvf trinity_output_pt2.Trinity.fasta.gene_trans_map.tar.gz --remove-files 
 find ./ -type f -size +100M -delete
 
 # Cleanup 2_Mapping
+cd ../2_Mapping/
 # zip "quant.sf" files
 for i in */quant.sf; do
     tar -czvf "$i.tar.gz" --remove-files $i
 done
 # Remove large files (>100Mb)
 find ./ -type f -size +100M -delete
+# Remove index file
+rm Leukoma.transcriptome-filtered.fasta.fai
+# Remove large (~8Mb) ambig_info.tsv files
+rm */aux_info/ambig_info.tsv
 
 # Cleanup 4_Final_Mapping
 cd ../4_Final_Mapping
