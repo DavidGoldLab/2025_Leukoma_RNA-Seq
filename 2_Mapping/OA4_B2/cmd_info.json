@@ -1,0 +1,11 @@
+{
+    "salmon_version": "1.10.1",
+    "index": "/home/dgold/23_Clams_Trinity/1_Trinity_Output/cdhit.salmon.idx",
+    "libType": "IU",
+    "mates1": "/home/dgold/23_Clams_Trinity/2_Mapping/../0_Data/SRR25907734_1.fastq.gz",
+    "mates2": "/home/dgold/23_Clams_Trinity/2_Mapping/../0_Data/SRR25907734_2.fastq.gz",
+    "output": "OA4_B2",
+    "threads": "4",
+    "validateMappings": [],
+    "auxDir": "aux_info"
+}
