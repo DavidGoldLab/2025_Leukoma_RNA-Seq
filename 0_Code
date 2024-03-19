@@ -459,6 +459,8 @@ cd ../4_Final_Mapping
 for i in salmon.*; do
  tar -czvf "$i.tar.gz" --remove-files $i
 done
+# Compress clusters.txt
+tar -czvf clusters.txt.tar.gz --remove-files clusters.txt
 # Delete isoform matrices
 rm salmon.isoform*
 # Compress "quant.sf" files
