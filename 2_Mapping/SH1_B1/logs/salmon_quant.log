@@ -1,0 +1,51 @@
+[2024-01-21 00:16:37.695] [jointLog] [info] setting maxHashResizeThreads to 4
+[2024-01-21 00:16:37.695] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2024-01-21 00:16:37.695] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2024-01-21 00:16:37.695] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2024-01-21 00:16:37.695] [jointLog] [info] parsing read library format
+[2024-01-21 00:16:37.695] [jointLog] [info] There is 1 library.
+[2024-01-21 00:16:37.698] [jointLog] [info] Loading pufferfish index
+[2024-01-21 00:16:37.698] [jointLog] [info] Loading dense pufferfish index.
+[2024-01-21 00:16:47.269] [jointLog] [info] done
+[2024-01-21 00:16:47.362] [jointLog] [info] Index contained 2,060,605 targets
+[2024-01-21 00:16:48.483] [jointLog] [info] Number of decoys : 0
+[2024-01-21 00:58:56.839] [jointLog] [info] Computed 2,329,021 rich equivalence classes for further processing
+[2024-01-21 00:58:56.839] [jointLog] [info] Counted 24,981,092 total reads in the equivalence classes 
+[2024-01-21 00:58:56.842] [jointLog] [info] Number of mappings discarded because of alignment score : 50,262,987
+[2024-01-21 00:58:56.842] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 6,031,144
+[2024-01-21 00:58:56.842] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2024-01-21 00:58:56.842] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 12,462,044
+[2024-01-21 00:58:56.842] [jointLog] [info] Mapping rate = 80.3115%
+
+[2024-01-21 00:58:56.842] [jointLog] [info] finished quantifyLibrary()
+[2024-01-21 00:58:56.915] [jointLog] [info] Starting optimizer
+[2024-01-21 00:58:56.839] [fileLog] [info] 
+At end of round 0
+==================
+Observed 31105262 total fragments (31105262 in most recent round)
+
+[2024-01-21 01:00:02.089] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2024-01-21 01:00:02.318] [jointLog] [info] iteration = 0 | max rel diff. = 736.307
+[2024-01-21 01:00:24.809] [jointLog] [info] iteration = 100 | max rel diff. = 16.9376
+[2024-01-21 01:00:47.253] [jointLog] [info] iteration = 200 | max rel diff. = 12.098
+[2024-01-21 01:01:09.720] [jointLog] [info] iteration = 300 | max rel diff. = 4.58791
+[2024-01-21 01:01:32.194] [jointLog] [info] iteration = 400 | max rel diff. = 8.18985
+[2024-01-21 01:01:54.663] [jointLog] [info] iteration = 500 | max rel diff. = 9.92766
+[2024-01-21 01:02:17.136] [jointLog] [info] iteration = 600 | max rel diff. = 0.245685
+[2024-01-21 01:02:39.605] [jointLog] [info] iteration = 700 | max rel diff. = 0.351267
+[2024-01-21 01:03:02.075] [jointLog] [info] iteration = 800 | max rel diff. = 0.67803
+[2024-01-21 01:03:24.546] [jointLog] [info] iteration = 900 | max rel diff. = 0.762764
+[2024-01-21 01:03:47.028] [jointLog] [info] iteration = 1,000 | max rel diff. = 0.0339675
+[2024-01-21 01:04:09.501] [jointLog] [info] iteration = 1,100 | max rel diff. = 0.262844
+[2024-01-21 01:04:31.974] [jointLog] [info] iteration = 1,200 | max rel diff. = 0.0782258
+[2024-01-21 01:04:54.444] [jointLog] [info] iteration = 1,300 | max rel diff. = 0.134495
+[2024-01-21 01:05:16.918] [jointLog] [info] iteration = 1,400 | max rel diff. = 0.215113
+[2024-01-21 01:05:39.385] [jointLog] [info] iteration = 1,500 | max rel diff. = 1.34585
+[2024-01-21 01:05:39.833] [jointLog] [info] iteration = 1,503 | max rel diff. = 0.00904946
+[2024-01-21 01:05:40.115] [jointLog] [info] Finished optimizer
+[2024-01-21 01:05:40.115] [jointLog] [info] writing output 
+
+[2024-01-21 01:05:43.943] [jointLog] [warning] NOTE: Read Lib [[ /home/dgold/23_Clams_Trinity/2_Mapping/../0_Data/SRR25907723_1.fastq.gz, /home/dgold/23_Clams_Trinity/2_Mapping/../0_Data/SRR25907723_2.fastq.gz]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: SH1_B1/lib_format_counts.json for details
+
