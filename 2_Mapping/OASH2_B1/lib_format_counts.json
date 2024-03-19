@@ -1,0 +1,22 @@
+{
+    "read_files": "[ /home/dgold/23_Clams_Trinity/2_Mapping/../0_Data/SRR25907732_1.fastq.gz, /home/dgold/23_Clams_Trinity/2_Mapping/../0_Data/SRR25907732_2.fastq.gz]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 25351630,
+    "num_assigned_fragments": 25351630,
+    "num_frags_with_concordant_consistent_mappings": 20630384,
+    "num_frags_with_inconsistent_or_orphan_mappings": 11632451,
+    "strand_mapping_bias": 0.5081763383560868,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 10483873,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 10146511,
+    "SF": 5829244,
+    "SR": 5803207,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
