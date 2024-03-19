@@ -1,0 +1,51 @@
+[2024-02-18 00:11:01.416] [jointLog] [info] setting maxHashResizeThreads to 4
+[2024-02-18 00:11:01.416] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2024-02-18 00:11:01.416] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2024-02-18 00:11:01.416] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2024-02-18 00:11:01.416] [jointLog] [info] parsing read library format
+[2024-02-18 00:11:01.416] [jointLog] [info] There is 1 library.
+[2024-02-18 00:11:01.419] [jointLog] [info] Loading pufferfish index
+[2024-02-18 00:11:01.420] [jointLog] [info] Loading dense pufferfish index.
+[2024-02-18 00:11:03.999] [jointLog] [info] done
+[2024-02-18 00:11:04.093] [jointLog] [info] Index contained 635,936 targets
+[2024-02-18 00:11:04.290] [jointLog] [info] Number of decoys : 0
+[2024-02-18 00:43:59.677] [jointLog] [info] Computed 1,277,220 rich equivalence classes for further processing
+[2024-02-18 00:43:59.677] [jointLog] [info] Counted 21,787,316 total reads in the equivalence classes 
+[2024-02-18 00:43:59.680] [jointLog] [info] Number of mappings discarded because of alignment score : 44,100,610
+[2024-02-18 00:43:59.680] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 5,875,943
+[2024-02-18 00:43:59.680] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2024-02-18 00:43:59.680] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 11,002,220
+[2024-02-18 00:43:59.680] [jointLog] [info] Mapping rate = 76.4578%
+
+[2024-02-18 00:43:59.680] [jointLog] [info] finished quantifyLibrary()
+[2024-02-18 00:43:59.797] [jointLog] [info] Starting optimizer
+[2024-02-18 00:43:59.677] [fileLog] [info] 
+At end of round 0
+==================
+Observed 28495864 total fragments (28495864 in most recent round)
+
+[2024-02-18 00:44:00.177] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2024-02-18 00:44:00.261] [jointLog] [info] iteration = 0 | max rel diff. = 1931.11
+[2024-02-18 00:44:08.272] [jointLog] [info] iteration = 100 | max rel diff. = 8.92638
+[2024-02-18 00:44:16.315] [jointLog] [info] iteration = 200 | max rel diff. = 6.68197
+[2024-02-18 00:44:24.339] [jointLog] [info] iteration = 300 | max rel diff. = 9.25034
+[2024-02-18 00:44:32.360] [jointLog] [info] iteration = 400 | max rel diff. = 15.6321
+[2024-02-18 00:44:40.356] [jointLog] [info] iteration = 500 | max rel diff. = 0.418204
+[2024-02-18 00:44:48.355] [jointLog] [info] iteration = 600 | max rel diff. = 0.757953
+[2024-02-18 00:44:56.348] [jointLog] [info] iteration = 700 | max rel diff. = 10.8659
+[2024-02-18 00:45:04.331] [jointLog] [info] iteration = 800 | max rel diff. = 0.0581397
+[2024-02-18 00:45:12.332] [jointLog] [info] iteration = 900 | max rel diff. = 0.565714
+[2024-02-18 00:45:20.323] [jointLog] [info] iteration = 1,000 | max rel diff. = 0.0402021
+[2024-02-18 00:45:28.321] [jointLog] [info] iteration = 1,100 | max rel diff. = 0.034128
+[2024-02-18 00:45:36.319] [jointLog] [info] iteration = 1,200 | max rel diff. = 0.047796
+[2024-02-18 00:45:44.320] [jointLog] [info] iteration = 1,300 | max rel diff. = 0.0877887
+[2024-02-18 00:45:52.312] [jointLog] [info] iteration = 1,400 | max rel diff. = 0.0911149
+[2024-02-18 00:46:00.312] [jointLog] [info] iteration = 1,500 | max rel diff. = 0.0721041
+[2024-02-18 00:46:01.510] [jointLog] [info] iteration = 1,516 | max rel diff. = 0.00571855
+[2024-02-18 00:46:01.594] [jointLog] [info] Finished optimizer
+[2024-02-18 00:46:01.594] [jointLog] [info] writing output 
+
+[2024-02-18 00:46:02.877] [jointLog] [warning] NOTE: Read Lib [[ /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907739_1.fastq.gz, /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907739_2.fastq.gz]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: OA2_B1/lib_format_counts.json for details
+

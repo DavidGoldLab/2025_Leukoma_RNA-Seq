@@ -1,0 +1,22 @@
+{
+    "read_files": "[ /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907739_1.fastq.gz, /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907739_2.fastq.gz]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 21787316,
+    "num_assigned_fragments": 21787316,
+    "num_frags_with_concordant_consistent_mappings": 17558169,
+    "num_frags_with_inconsistent_or_orphan_mappings": 9821078,
+    "strand_mapping_bias": 0.5109831213038216,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 8971928,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 8586241,
+    "SF": 4922447,
+    "SR": 4898631,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

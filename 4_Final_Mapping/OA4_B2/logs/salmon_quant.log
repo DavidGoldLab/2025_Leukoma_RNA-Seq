@@ -1,0 +1,50 @@
+[2024-02-18 03:30:11.536] [jointLog] [info] setting maxHashResizeThreads to 4
+[2024-02-18 03:30:11.536] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2024-02-18 03:30:11.536] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2024-02-18 03:30:11.536] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2024-02-18 03:30:11.536] [jointLog] [info] parsing read library format
+[2024-02-18 03:30:11.536] [jointLog] [info] There is 1 library.
+[2024-02-18 03:30:11.538] [jointLog] [info] Loading pufferfish index
+[2024-02-18 03:30:11.538] [jointLog] [info] Loading dense pufferfish index.
+[2024-02-18 03:30:14.106] [jointLog] [info] done
+[2024-02-18 03:30:14.201] [jointLog] [info] Index contained 635,936 targets
+[2024-02-18 03:30:14.400] [jointLog] [info] Number of decoys : 0
+[2024-02-18 04:01:33.961] [jointLog] [info] Computed 1,310,952 rich equivalence classes for further processing
+[2024-02-18 04:01:33.961] [jointLog] [info] Counted 22,587,286 total reads in the equivalence classes 
+[2024-02-18 04:01:33.964] [jointLog] [info] Number of mappings discarded because of alignment score : 43,244,698
+[2024-02-18 04:01:33.964] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 5,717,957
+[2024-02-18 04:01:33.964] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2024-02-18 04:01:33.964] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 10,780,203
+[2024-02-18 04:01:33.964] [jointLog] [info] Mapping rate = 77.2356%
+
+[2024-02-18 04:01:33.964] [jointLog] [info] finished quantifyLibrary()
+[2024-02-18 04:01:34.084] [jointLog] [info] Starting optimizer
+[2024-02-18 04:01:33.961] [fileLog] [info] 
+At end of round 0
+==================
+Observed 29244674 total fragments (29244674 in most recent round)
+
+[2024-02-18 04:01:34.455] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2024-02-18 04:01:34.540] [jointLog] [info] iteration = 0 | max rel diff. = 1946.14
+[2024-02-18 04:01:42.782] [jointLog] [info] iteration = 100 | max rel diff. = 18.1971
+[2024-02-18 04:01:51.017] [jointLog] [info] iteration = 200 | max rel diff. = 3.56084
+[2024-02-18 04:01:59.261] [jointLog] [info] iteration = 300 | max rel diff. = 5.17317
+[2024-02-18 04:02:07.486] [jointLog] [info] iteration = 400 | max rel diff. = 0.688129
+[2024-02-18 04:02:15.710] [jointLog] [info] iteration = 500 | max rel diff. = 17.8632
+[2024-02-18 04:02:23.918] [jointLog] [info] iteration = 600 | max rel diff. = 0.0400771
+[2024-02-18 04:02:32.135] [jointLog] [info] iteration = 700 | max rel diff. = 0.103606
+[2024-02-18 04:02:40.332] [jointLog] [info] iteration = 800 | max rel diff. = 0.242723
+[2024-02-18 04:02:48.535] [jointLog] [info] iteration = 900 | max rel diff. = 0.0259957
+[2024-02-18 04:02:56.745] [jointLog] [info] iteration = 1,000 | max rel diff. = 0.0139662
+[2024-02-18 04:03:04.943] [jointLog] [info] iteration = 1,100 | max rel diff. = 0.794343
+[2024-02-18 04:03:13.141] [jointLog] [info] iteration = 1,200 | max rel diff. = 0.0283909
+[2024-02-18 04:03:21.344] [jointLog] [info] iteration = 1,300 | max rel diff. = 0.0307436
+[2024-02-18 04:03:29.554] [jointLog] [info] iteration = 1,400 | max rel diff. = 0.255503
+[2024-02-18 04:03:31.193] [jointLog] [info] iteration = 1,421 | max rel diff. = 0.0087805
+[2024-02-18 04:03:31.279] [jointLog] [info] Finished optimizer
+[2024-02-18 04:03:31.279] [jointLog] [info] writing output 
+
+[2024-02-18 04:03:32.582] [jointLog] [warning] NOTE: Read Lib [[ /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907734_1.fastq.gz, /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907734_2.fastq.gz]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: OA4_B2/lib_format_counts.json for details
+

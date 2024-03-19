@@ -1,0 +1,11 @@
+{
+    "salmon_version": "1.10.1",
+    "index": "/home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/Leukoma.transcriptome-corset.fasta.salmon.idx",
+    "libType": "IU",
+    "mates1": "/home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907739_1.fastq.gz",
+    "mates2": "/home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907739_2.fastq.gz",
+    "output": "OA2_B1",
+    "threads": "4",
+    "validateMappings": [],
+    "auxDir": "aux_info"
+}

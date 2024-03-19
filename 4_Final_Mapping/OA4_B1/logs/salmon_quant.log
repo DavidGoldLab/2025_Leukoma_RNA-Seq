@@ -1,0 +1,51 @@
+[2024-02-18 02:42:14.308] [jointLog] [info] setting maxHashResizeThreads to 4
+[2024-02-18 02:42:14.308] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2024-02-18 02:42:14.308] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2024-02-18 02:42:14.308] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2024-02-18 02:42:14.308] [jointLog] [info] parsing read library format
+[2024-02-18 02:42:14.308] [jointLog] [info] There is 1 library.
+[2024-02-18 02:42:14.311] [jointLog] [info] Loading pufferfish index
+[2024-02-18 02:42:14.311] [jointLog] [info] Loading dense pufferfish index.
+[2024-02-18 02:42:16.888] [jointLog] [info] done
+[2024-02-18 02:42:16.984] [jointLog] [info] Index contained 635,936 targets
+[2024-02-18 02:42:17.170] [jointLog] [info] Number of decoys : 0
+[2024-02-18 03:27:53.611] [jointLog] [info] Computed 1,279,218 rich equivalence classes for further processing
+[2024-02-18 03:27:53.611] [jointLog] [info] Counted 23,574,742 total reads in the equivalence classes 
+[2024-02-18 03:27:53.614] [jointLog] [info] Number of mappings discarded because of alignment score : 46,305,614
+[2024-02-18 03:27:53.614] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 6,443,081
+[2024-02-18 03:27:53.614] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2024-02-18 03:27:53.614] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 11,791,852
+[2024-02-18 03:27:53.614] [jointLog] [info] Mapping rate = 76.3201%
+
+[2024-02-18 03:27:53.614] [jointLog] [info] finished quantifyLibrary()
+[2024-02-18 03:27:53.739] [jointLog] [info] Starting optimizer
+[2024-02-18 03:27:53.611] [fileLog] [info] 
+At end of round 0
+==================
+Observed 30889286 total fragments (30889286 in most recent round)
+
+[2024-02-18 03:27:54.095] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2024-02-18 03:27:54.180] [jointLog] [info] iteration = 0 | max rel diff. = 1987.29
+[2024-02-18 03:28:02.274] [jointLog] [info] iteration = 100 | max rel diff. = 11.5435
+[2024-02-18 03:28:10.363] [jointLog] [info] iteration = 200 | max rel diff. = 2.93024
+[2024-02-18 03:28:18.428] [jointLog] [info] iteration = 300 | max rel diff. = 6.79626
+[2024-02-18 03:28:26.501] [jointLog] [info] iteration = 400 | max rel diff. = 0.623535
+[2024-02-18 03:28:34.564] [jointLog] [info] iteration = 500 | max rel diff. = 1.83176
+[2024-02-18 03:28:42.616] [jointLog] [info] iteration = 600 | max rel diff. = 0.796322
+[2024-02-18 03:28:50.677] [jointLog] [info] iteration = 700 | max rel diff. = 0.165666
+[2024-02-18 03:28:58.732] [jointLog] [info] iteration = 800 | max rel diff. = 3.8753
+[2024-02-18 03:29:06.796] [jointLog] [info] iteration = 900 | max rel diff. = 0.0323161
+[2024-02-18 03:29:14.853] [jointLog] [info] iteration = 1,000 | max rel diff. = 3.6605
+[2024-02-18 03:29:22.917] [jointLog] [info] iteration = 1,100 | max rel diff. = 0.0182455
+[2024-02-18 03:29:30.971] [jointLog] [info] iteration = 1,200 | max rel diff. = 0.517135
+[2024-02-18 03:29:39.016] [jointLog] [info] iteration = 1,300 | max rel diff. = 0.0186281
+[2024-02-18 03:29:47.079] [jointLog] [info] iteration = 1,400 | max rel diff. = 0.201749
+[2024-02-18 03:29:55.128] [jointLog] [info] iteration = 1,500 | max rel diff. = 0.0348246
+[2024-02-18 03:29:57.300] [jointLog] [info] iteration = 1,528 | max rel diff. = 0.00480845
+[2024-02-18 03:29:57.386] [jointLog] [info] Finished optimizer
+[2024-02-18 03:29:57.386] [jointLog] [info] writing output 
+
+[2024-02-18 03:29:58.684] [jointLog] [warning] NOTE: Read Lib [[ /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907737_1.fastq.gz, /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907737_2.fastq.gz]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: OA4_B1/lib_format_counts.json for details
+
