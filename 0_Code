@@ -270,63 +270,13 @@ abundance_estimates_to_matrix.pl \
 --name_sample_by_basedir \
 --quant_files salmon.quant_files.txt
 
-###################################
-# Differential Expression Analysis
-###################################
-
-cd /home/dgold/23_Clams_Trinity/5_DE_Gene_Expression
-
-# Load packages
-module load trinity # v.2.15.1
-module load R # v.4.2.3
-module load salmon # v.1.10.1
-module load samtools # v.1.2.13
-
-/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_DE_analysis.pl \
---matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
---method edgeR \
---samples_file ../2_Mapping/samples_file.txt
-
-# Generate samples file
-
-echo -e "C\tC1_B1
-C\tC1_B2
-C\tC2_B1
-C\tC2_B2
-C\tC3_B1
-C\tC4_B2
-OA\tOA2_B1
-OA\tOA2_B2
-OA\tOA3_B1
-OA\tOA3_B2
-OA\tOA4_B1
-OA\tOA4_B2
-OASH\tOASH1_B1
-OASH\tOASH1_B2
-OASH\tOASH2_B1
-OASH\tOASH2_B2
-OASH\tOASH4_B1
-OASH\tOASH4_B2
-SH\tSH1_B1
-SH\tSH2_B2
-SH\tSH3_B2
-SH\tSH4_B1
-SH\tSH4_B2
-SH\tSH2_B1" > samples.txt
-
-# Extracting and clustering differentially expressed transcripts
-
-/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
---matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
---samples samples.txt
-
 ###############################
 # Annotate Genes with Trinotate
 ###############################
 
-mkdir /home/dgold/23_Clams_Trinity/6_Trinotate
-mkdir /home/dgold/23_Clams_Trinity/6_Trinotate/Data
-cd /home/dgold/23_Clams_Trinity/6_Trinotate
+mkdir /home/dgold/23_Clams_Trinity/5_Trinotate
+mkdir /home/dgold/23_Clams_Trinity/5_Trinotate/Data
+cd /home/dgold/23_Clams_Trinity/5_Trinotate
 
 # Requires Trinotate (v.4.0.2)
 # Requires Transdecoder (v.5.7.1)
@@ -408,20 +358,6 @@ module load conda
 -G --include_ancestral_terms \
 > go_annotations.txt
 
-# Make 'factor_labeling.txt' file
-# Get DE genes from EdgeR analysis
-cat ../5_DE_Gene_Expression/edgeR.537991.dir/*.edgeR.DE_results.P0.001_C2.DE.subset > factor_labeling.txt
-# Remove headers
-sed -i '/^sampleA/d' factor_labeling.txt
-# Extract the first three columns
-cut -d$'\t' -f1-3 factor_labeling.txt > tmp1 && mv tmp1 factor_labeling.txt
-# Rearrange for "factor labeling" format
-awk -F'\t' '{print $3 "vs" $2 "\t" $1}' factor_labeling.txt > tmp1 && mv tmp1 factor_labeling.txt
-
-# Create background list
-cut -d$'\t' -f2 factor_labeling.txt > background.txt
-sort -u background.txt > tmp1 && mv tmp1 background.txt
-
 # Make 'gene.lengths.txt' file
 /share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/util/misc/fasta_seq_length.pl  \
 ../4_Final_Mapping/Leukoma.transcriptome-corset.fasta > Trinity.fasta.seq_lens
@@ -431,12 +367,55 @@ sort -u background.txt > tmp1 && mv tmp1 background.txt
 --trans_lengths Trinity.fasta.seq_lens \
 --TPM_matrix ../4_Final_Mapping/salmon.isoform.TMM.EXPR.matrix > gene_lengths.txt
 
-# Run GOseq
-/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_GOseq.pl \
- --factor_labeling  factor_labeling.txt \
- --GO_assignments go_annotations.txt \
- --lengths gene_lengths.txt \
- --background background.txt
+###################################
+# Differential Expression Analysis
+###################################
+
+cd /home/dgold/23_Clams_Trinity/6_DE_Gene_Expression
+
+# Load packages
+module load trinity # v.2.15.1
+module load R # v.4.2.3
+module load salmon # v.1.10.1
+module load samtools # v.1.2.13
+
+/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_DE_analysis.pl \
+--matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
+--method edgeR \
+--samples_file ../2_Mapping/samples_file.txt
+
+# Generate samples file
+
+echo -e "C\tC1_B1
+C\tC1_B2
+C\tC2_B1
+C\tC2_B2
+C\tC3_B1
+C\tC4_B2
+OA\tOA2_B1
+OA\tOA2_B2
+OA\tOA3_B1
+OA\tOA3_B2
+OA\tOA4_B1
+OA\tOA4_B2
+OASH\tOASH1_B1
+OASH\tOASH1_B2
+OASH\tOASH2_B1
+OASH\tOASH2_B2
+OASH\tOASH4_B1
+OASH\tOASH4_B2
+SH\tSH1_B1
+SH\tSH2_B2
+SH\tSH3_B2
+SH\tSH4_B1
+SH\tSH4_B2
+SH\tSH2_B1" > samples.txt
+
+# Extracting and clustering differentially expressed transcripts
+	# Performed on local computer; errors generated on Peloton
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
+--samples samples.txt
 
 #########
 # Cleanup
@@ -478,4 +457,20 @@ for i in */quant.sf.genes; do
 done
 # Remove large files (>100Mb)
 find ./ -type f -size +100M -delete
+
+# Cleanup 5_Trinotate
+cd ../5_Trinotate
+# Remove everything except the annotation report, peptides, and GOSeq input
+mv Leukoma_Trinotate_Report.tsv ../
+mv Leukoma.transcriptome-corset.fasta.transdecoder.pep ../
+mv gene_lengths.txt ../
+mv go_annotations.txt ../
+rm -r *
+mv ../Leukoma_Trinotate_Report.tsv ./
+mv ../Leukoma.transcriptome-corset.fasta.transdecoder.pep ./
+mv ../gene_lengths.txt ./
+mv ../go_annotations.txt ./
+# Compress annotation report and peptides
+tar -czvf Leukoma_Trinotate_Report.tsv.tar.gz --remove-files Leukoma_Trinotate_Report.tsv
+tar -czvf Leukoma.transcriptome-corset.fasta.transdecoder.pep.tar.gz --remove-files Leukoma.transcriptome-corset.fasta.transdecoder.pep
 
