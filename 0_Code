@@ -461,6 +461,8 @@ for i in salmon.*; do
 done
 # Compress clusters.txt
 tar -czvf clusters.txt.tar.gz --remove-files clusters.txt
+# Remove salmon index directory
+rm -r Leukoma.transcriptome-corset.fasta.salmon.idx
 # Delete isoform matrices
 rm salmon.isoform*
 # Compress "quant.sf" files
