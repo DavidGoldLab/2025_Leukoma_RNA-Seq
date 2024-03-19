@@ -1,8 +1,0 @@
-# Compress "quant.sf" files
-for i in */quant.sf.tar.gz; do
- tar -xvf $i
-done
-# Compress "quant.sf.genes" files
-for i in */quant.sf.genes.tar.gz; do
- tar -xvf $i
-done
