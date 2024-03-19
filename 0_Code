@@ -423,12 +423,17 @@ SH\tSH2_B1" > samples.txt
 
 # Cleanup 0_Data
 cd 0_Data/
-# Remove large files (>100Mb)
+# Remove large files (>20Mb)
 rm *
 
 # Cleanup 1_Trinity_Output
 cd ../1_Trinity_Output/
-# Remove large files (>100Mb)
+# Remove salmon index
+rm -r cdhit.salmon.idx
+# Compress gene_trans_map files
+tar -czvf trinity_output_pt1.Trinity.fasta.gene_trans_map.tar.gz --remove-files trinity_output_pt1.Trinity.fasta.gene_trans_map
+tar -czvf trinity_output_pt2.Trinity.fasta.gene_trans_map.tar.gz --remove-files trinity_output_pt2.Trinity.fasta.gene_trans_map
+# Remove large files (>20Mb)
 find ./ -type f -size +100M -delete
 
 # Cleanup 2_Mapping
