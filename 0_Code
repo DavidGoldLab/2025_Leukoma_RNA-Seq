@@ -439,16 +439,19 @@ find ./ -type f -size +100M -delete
 
 # Cleanup 2_Mapping
 cd ../2_Mapping/
-# zip "quant.sf" files
-for i in */quant.sf; do
-    tar -czvf "$i.tar.gz" --remove-files $i
-done
+# remove "quant.sf" files
+rm */quant.sf
 # Remove large files (>100Mb)
 find ./ -type f -size +100M -delete
 # Remove index file
 rm Leukoma.transcriptome-filtered.fasta.fai
 # Remove large (~8Mb) ambig_info.tsv files
 rm */aux_info/ambig_info.tsv
+
+# Cleanup 3_Corset
+cd ../3_Corset
+# Compress clusters.txt
+tar -czvf clusters.txt.tar.gz --remove-files clusters.txt
 
 # Cleanup 4_Final_Mapping
 cd ../4_Final_Mapping
