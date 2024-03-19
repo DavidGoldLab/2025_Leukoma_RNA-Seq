@@ -1,0 +1,50 @@
+[2024-02-18 07:54:55.087] [jointLog] [info] setting maxHashResizeThreads to 4
+[2024-02-18 07:54:55.087] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2024-02-18 07:54:55.087] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2024-02-18 07:54:55.087] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2024-02-18 07:54:55.087] [jointLog] [info] parsing read library format
+[2024-02-18 07:54:55.087] [jointLog] [info] There is 1 library.
+[2024-02-18 07:54:55.089] [jointLog] [info] Loading pufferfish index
+[2024-02-18 07:54:55.090] [jointLog] [info] Loading dense pufferfish index.
+[2024-02-18 07:54:57.674] [jointLog] [info] done
+[2024-02-18 07:54:57.774] [jointLog] [info] Index contained 635,936 targets
+[2024-02-18 07:54:57.971] [jointLog] [info] Number of decoys : 0
+[2024-02-18 08:36:30.196] [fileLog] [info] 
+At end of round 0
+==================
+Observed 31105262 total fragments (31105262 in most recent round)
+
+[2024-02-18 08:36:30.196] [jointLog] [info] Computed 1,365,668 rich equivalence classes for further processing
+[2024-02-18 08:36:30.196] [jointLog] [info] Counted 23,678,612 total reads in the equivalence classes 
+[2024-02-18 08:36:30.209] [jointLog] [info] Number of mappings discarded because of alignment score : 49,218,731
+[2024-02-18 08:36:30.209] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 6,420,924
+[2024-02-18 08:36:30.209] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2024-02-18 08:36:30.209] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 11,990,645
+[2024-02-18 08:36:30.209] [jointLog] [info] Mapping rate = 76.1241%
+
+[2024-02-18 08:36:30.209] [jointLog] [info] finished quantifyLibrary()
+[2024-02-18 08:36:30.334] [jointLog] [info] Starting optimizer
+[2024-02-18 08:36:30.691] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2024-02-18 08:36:30.779] [jointLog] [info] iteration = 0 | max rel diff. = 2049.03
+[2024-02-18 08:36:39.229] [jointLog] [info] iteration = 100 | max rel diff. = 19.2871
+[2024-02-18 08:36:47.672] [jointLog] [info] iteration = 200 | max rel diff. = 2.42066
+[2024-02-18 08:36:56.094] [jointLog] [info] iteration = 300 | max rel diff. = 1.91418
+[2024-02-18 08:37:04.504] [jointLog] [info] iteration = 400 | max rel diff. = 0.332366
+[2024-02-18 08:37:12.915] [jointLog] [info] iteration = 500 | max rel diff. = 0.53409
+[2024-02-18 08:37:21.335] [jointLog] [info] iteration = 600 | max rel diff. = 0.0667982
+[2024-02-18 08:37:29.749] [jointLog] [info] iteration = 700 | max rel diff. = 0.228578
+[2024-02-18 08:37:38.145] [jointLog] [info] iteration = 800 | max rel diff. = 0.339178
+[2024-02-18 08:37:46.548] [jointLog] [info] iteration = 900 | max rel diff. = 0.0614604
+[2024-02-18 08:37:54.948] [jointLog] [info] iteration = 1,000 | max rel diff. = 0.134501
+[2024-02-18 08:38:03.355] [jointLog] [info] iteration = 1,100 | max rel diff. = 0.0397884
+[2024-02-18 08:38:11.748] [jointLog] [info] iteration = 1,200 | max rel diff. = 0.0141688
+[2024-02-18 08:38:20.149] [jointLog] [info] iteration = 1,300 | max rel diff. = 0.0195735
+[2024-02-18 08:38:28.541] [jointLog] [info] iteration = 1,400 | max rel diff. = 0.00679025
+[2024-02-18 08:38:28.541] [jointLog] [info] iteration = 1,401 | max rel diff. = 0.00679025
+[2024-02-18 08:38:28.625] [jointLog] [info] Finished optimizer
+[2024-02-18 08:38:28.625] [jointLog] [info] writing output 
+
+[2024-02-18 08:38:29.979] [jointLog] [warning] NOTE: Read Lib [[ /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907723_1.fastq.gz, /home/dgold/23_Clams_Trinity/4_Differential_Expression_Analysis/../0_Data/SRR25907723_2.fastq.gz]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: SH1_B1/lib_format_counts.json for details
+

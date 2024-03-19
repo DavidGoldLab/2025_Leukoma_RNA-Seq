@@ -1,0 +1,39 @@
+[2024-02-18 11:24:00.281] [jointLog] [info] setting maxHashResizeThreads to 4
+[2024-02-18 11:24:00.281] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2024-02-18 11:24:00.281] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2024-02-18 11:24:00.281] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2024-02-18 11:24:00.281] [jointLog] [info] parsing read library format
+[2024-02-18 11:24:00.281] [jointLog] [info] There is 1 library.
+[2024-02-18 11:24:00.283] [jointLog] [info] Loading pufferfish index
+[2024-02-18 11:24:00.284] [jointLog] [info] Loading dense pufferfish index.
+[2024-02-18 11:24:02.858] [jointLog] [info] done
+[2024-02-18 11:24:02.959] [jointLog] [info] Index contained 635,936 targets
+[2024-02-18 11:24:03.156] [jointLog] [info] Number of decoys : 0
+[2024-02-18 12:01:32.550] [jointLog] [info] Computed 1,271,756 rich equivalence classes for further processing
+[2024-02-18 12:01:32.550] [jointLog] [info] Counted 22,838,145 total reads in the equivalence classes 
+[2024-02-18 12:01:32.552] [jointLog] [info] Number of mappings discarded because of alignment score : 55,471,386
+[2024-02-18 12:01:32.552] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 7,450,586
+[2024-02-18 12:01:32.552] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2024-02-18 12:01:32.552] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 13,043,788
+[2024-02-18 12:01:32.552] [jointLog] [info] Mapping rate = 73.4014%
+
+[2024-02-18 12:01:32.552] [jointLog] [info] finished quantifyLibrary()
+[2024-02-18 12:01:32.683] [jointLog] [info] Starting optimizer
+[2024-02-18 12:01:32.550] [fileLog] [info] 
+At end of round 0
+==================
+Observed 31114042 total fragments (31114042 in most recent round)
+
+[2024-02-18 12:01:33.041] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2024-02-18 12:01:33.125] [jointLog] [info] iteration = 0 | max rel diff. = 1962.7
+[2024-02-18 12:01:41.167] [jointLog] [info] iteration = 100 | max rel diff. = 9.9762
+[2024-02-18 12:01:49.184] [jointLog] [info] iteration = 200 | max rel diff. = 2.53839
+[2024-02-18 12:01:57.207] [jointLog] [info] iteration = 300 | max rel diff. = 4.56031
+[2024-02-18 12:02:05.229] [jointLog] [info] iteration = 400 | max rel diff. = 16.2787
+[2024-02-18 12:02:13.253] [jointLog] [info] iteration = 500 | max rel diff. = 0.321026
+[2024-02-18 12:02:21.267] [jointLog] [info] iteration = 600 | max rel diff. = 0.66966
+[2024-02-18 12:02:29.272] [jointLog] [info] iteration = 700 | max rel diff. = 0.530092
+[2024-02-18 12:02:29.991] [jointLog] [info] iteration = 710 | max rel diff. = 0.00934442
+[2024-02-18 12:02:30.075] [jointLog] [info] Finished optimizer
+[2024-02-18 12:02:30.075] [jointLog] [info] writing output 
+
