@@ -490,5 +490,6 @@ mv ../gene_lengths.txt ./
 mv ../go_annotations.txt ./
 # Compress annotation report and peptides
 tar -czvf Leukoma_Trinotate_Report.tsv.tar.gz --remove-files Leukoma_Trinotate_Report.tsv
+tar -czvf go_annotations.txt.tar.gz --remove-files go_annotations.txt
 tar -czvf Leukoma.transcriptome-corset.fasta.transdecoder.pep.tar.gz --remove-files Leukoma.transcriptome-corset.fasta.transdecoder.pep
 
