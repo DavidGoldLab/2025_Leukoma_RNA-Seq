@@ -345,7 +345,7 @@ sed -i 's/ /\t/g' clusters.txt
 #####################################################
 https://github.com/trinityrnaseq/trinityrnaseq/wiki/Running-GOSeq
 
-cd /home/dgold/23_Clams_Trinity/6_Trinotate
+cd /home/dgold/23_Clams_Trinity/5_Trinotate
 
 # Load packages
 module load trinity # v.2.15.1
@@ -416,7 +416,7 @@ SH\tSH2_B1" > samples.txt
 	# Performed on local computer; errors generated on Peloton
 /usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
 --matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
---samples samples.txt
+--samples samples.txt --examine_GO_enrichment --GO_annots ../5_Trinotate/go_annotations.txt --gene_lengths ../5_Trinotate/gene_lengths.txt --include_GOplot
 
 #########
 # Cleanup
