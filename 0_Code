@@ -379,14 +379,17 @@ module load R # v.4.2.3
 module load salmon # v.1.10.1
 module load samtools # v.1.2.13
 
-/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_DE_analysis.pl \
-/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl
+# Run EdgeR Differential Gene Expression Analysis
+	# Performed on local computer
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl \
 --matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
 --method edgeR \
 --samples_file ../2_Mapping/samples_file.txt
 
-# Generate samples file
+# Move into new directory
+cd edgeR.7093.dir
 
+# Generate samples file
 echo -e "C\tC1_B1
 C\tC1_B2
 C\tC2_B1
@@ -413,10 +416,10 @@ SH\tSH4_B2
 SH\tSH2_B1" > samples.txt
 
 # Extracting and clustering differentially expressed transcripts
-	# Performed on local computer; errors generated on Peloton
+	# Performed on local computer
 /usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
 --matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
---samples samples.txt --examine_GO_enrichment --GO_annots ../5_Trinotate/go_annotations.txt --gene_lengths ../5_Trinotate/gene_lengths.txt --include_GOplot
+--samples samples.txt --examine_GO_enrichment --GO_annots ../../5_Trinotate/go_annotations.txt --gene_lengths ../../5_Trinotate/gene_lengths.txt --include_GOplot
 
 #########
 # Cleanup
