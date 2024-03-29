@@ -387,7 +387,7 @@ module load samtools # v.1.2.13
 --samples_file ../2_Mapping/samples_file.txt
 
 # Move into new directory
-cd edgeR.7093.dir
+cd edgeR.67043.dir
 
 # Generate samples file
 echo -e "C\tC1_B1
