@@ -421,6 +421,63 @@ SH\tSH2_B1" > samples.txt
 --matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
 --samples samples.txt --examine_GO_enrichment --GO_annots ../../5_Trinotate/go_annotations.txt --gene_lengths ../../5_Trinotate/gene_lengths.txt --include_GOplot
 
+# Create PCA plot
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/PtR \
+--matrix diffExpr.P0.001_C2.matrix \
+--samples samples.txt \
+--output PtR_Plots \
+--prin_comp 4 --sample_cor_matrix \
+--center_rows --log2
+
+# Second analysis -- treat all "non-OA" samples as one condition
+
+echo -e "not_OA\tC1_B1
+not_OA\tC1_B2
+not_OA\tC2_B1
+not_OA\tC2_B2
+not_OA\tC3_B1
+not_OA\tC4_B2
+OA\tOA2_B1
+OA\tOA2_B2
+OA\tOA3_B1
+OA\tOA3_B2
+OA\tOA4_B1
+OA\tOA4_B2
+not_OA\tOASH1_B1
+not_OA\tOASH1_B2
+not_OA\tOASH2_B1
+not_OA\tOASH2_B2
+not_OA\tOASH4_B1
+not_OA\tOASH4_B2
+not_OA\tSH1_B1
+not_OA\tSH2_B2
+not_OA\tSH3_B2
+not_OA\tSH4_B1
+not_OA\tSH4_B2
+not_OA\tSH2_B1" > samples-second_analysis.txt
+
+/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
+--matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
+--samples samples-second_analysis.txt --examine_GO_enrichment --GO_annots ../../5_Trinotate/go_annotations.txt --gene_lengths ../../5_Trinotate/gene_lengths.txt \
+--output DE_results-Try2.P${Pvalue}_C${C}
+
+# Get list of differentially expressed transcripts for Blast2Go
+
+# extract list of DE genes
+cut -f 1 diffExpr.P0.001_C2.matrix > temp1.txt
+sort temp1.txt > temp2.txt
+#remove first row
+sed '1d' temp2.txt > temp3.txt
+# Extract transcripts for genes from genes_trans_map file
+sort ../../4_Final_Mapping/clusters.txt > temp4.txt
+join temp3.txt temp4.txt > temp5.txt
+# extract list of DE transcipts
+cut -f 2 -d ' ' temp5.txt > temp6.txt
+# extract transcripts from transcriptome with Samtools
+xargs samtools faidx ../../3_Corset/Leukoma.transcriptome-corset.fasta < temp6.txt > Leukoma.DE_Transcripts.fasta
+# Cleanup
+rm temp*
+
 #########
 # Cleanup
 #########
