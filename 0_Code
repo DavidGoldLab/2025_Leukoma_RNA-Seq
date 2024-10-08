@@ -443,6 +443,151 @@ xargs samtools faidx ../../3_Corset/Leukoma.transcriptome-corset.fasta < temp6.t
 # Cleanup
 rm temp*
 
+#########################
+# Additional DE Analyses
+#########################
+
+cd /home/dgold/23_Clams_Trinity/7_DE_Genes
+
+mv ../6_DE_Gene_Expression/edgeR.67043.dir/Leukoma.DE_Transcripts.fasta ./
+
+# Generate proteins with Transdecoder
+transdecoder.longorfs -t Leukoma.DE_Transcripts.fasta
+transdecoder.predict -t Leukoma.DE_Transcripts.fasta
+
+# Cleanup
+mv Leukoma.DE_Transcripts.fasta.transdecoder.pep ../
+mv Leukoma.DE_Transcripts.fasta ../
+rm -r *
+mv ../Leukoma.DE_Transcripts.fasta ./
+mv ../Leukoma.DE_Transcripts.fasta.transdecoder.pep ./
+
+# BLAST DE transcripts against Magallana gigas proteome (57,876 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000005408%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Magallana.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Mizuhopecten yessoensis proteome (22,409 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000242188%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Mizuhopecten.txt
+open .
+
+# BLAST DE transcripts against Mytilus edulis proteome (73,624 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000683360%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Mytilus.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Crassostrea virginica proteome (50,256 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000694844%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Crassostrea.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Pinctada imbricataa proteome (25,352 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP001186944%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Pinctada.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Potamilus streckersoni proteome (36,954 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP001195483%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Potamilus.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Dreissena polymorpha proteome (181,328 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000828390%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Dreissena.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Lottia gigantea proteome (23,675 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000030746%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Lottia.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Pomacea canaliculata proteome (21,377 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000245119%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Pomacea.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Elysia chlorotica proteome (23,836 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000271974%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Elysia.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Octopus vulgaris proteome (30,332 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000515154%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Octopus.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Lingula unguis proteome (34,415 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000085678%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Lingula.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Homarus americanus proteome (24,351 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000747542%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Homarus.txt
+cd ..
+rm -r proteome
+
+# BLAST DE transcripts against Strongylocentrotus purpuratus proteome (34,417 proteins)
+mkdir proteome
+cd proteome
+wget -O Proteome.fasta "https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28proteome%3AUP000007110%29%29"
+makeblastdb -in Proteome.fasta -dbtype prot -out Proteome
+blastx -query ../Leukoma.DE_Transcripts.fasta -max_target_seqs 1 -db Proteome -outfmt 6 -evalue 10e-10 -out ../BLAST-Leukoma_v_Strongylocentrotus.txt
+cd ..
+rm -r proteome
+
+
 #########
 # Cleanup
 #########
