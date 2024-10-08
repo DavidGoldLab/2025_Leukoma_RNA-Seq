@@ -1,0 +1,70 @@
+Category	ID	Term	Genes	adj_pval
+BP	GO:0045824	negative regulation of innate immune response	Cluster-22148.115467	0.9999999999
+BP	GO:0002443	leukocyte mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0002835	negative regulation of response to tumor cell	Cluster-22148.115467	0.9999999999
+BP	GO:0045953	negative regulation of natural killer cell mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0031341	regulation of cell killing	Cluster-22148.115467	0.9999999999
+BP	GO:0002838	negative regulation of immune response to tumor cell	Cluster-22148.115467	0.9999999999
+BP	GO:0001906	cell killing	Cluster-22148.115467	0.9999999999
+BP	GO:0008213	protein alkylation	Cluster-22148.155473	0.9999999999
+BP	GO:0072350	tricarboxylic acid metabolic process	Cluster-22148.178334	0.9999999999
+BP	GO:0006102	isocitrate metabolic process	Cluster-22148.178334	0.9999999999
+BP	GO:0002856	negative regulation of natural killer cell mediated immune response to tumor cell	Cluster-22148.115467	0.9999999999
+CC	GO:0043209	myelin sheath	Cluster-22148.178334	0.9999999999
+BP	GO:0043414	macromolecule methylation	Cluster-22148.155473	0.9999999999
+BP	GO:0006479	protein methylation	Cluster-22148.155473	0.9999999999
+BP	GO:0001911	negative regulation of leukocyte mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:1901623	regulation of lymphocyte chemotaxis	Cluster-22148.115467	0.9999999999
+MF	GO:0016835	carbon-oxygen lyase activity	Cluster-22148.178334	0.9999999999
+CC	GO:0019773	proteasome core complex, alpha-subunit complex	Cluster-22148.264169	0.9999999999
+BP	GO:0002832	negative regulation of response to biotic stimulus	Cluster-22148.115467	0.9999999999
+BP	GO:2000402	negative regulation of lymphocyte migration	Cluster-22148.115467	0.9999999999
+BP	GO:0002449	lymphocyte mediated immunity	Cluster-22148.115467	0.9999999999
+MF	GO:0008171	O-methyltransferase activity	Cluster-22148.155473	0.9999999999
+BP	GO:0002716	negative regulation of natural killer cell mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:2000502	negative regulation of natural killer cell chemotaxis	Cluster-22148.115467	0.9999999999
+BP	GO:0002704	negative regulation of leukocyte mediated immunity	Cluster-22148.115467	0.9999999999
+MF	GO:0019903	protein phosphatase binding	Cluster-22148.115467	0.9999999999
+BP	GO:0002837	regulation of immune response to tumor cell	Cluster-22148.115467	0.9999999999
+BP	GO:0002686	negative regulation of leukocyte migration	Cluster-22148.115467	0.9999999999
+BP	GO:0002858	regulation of natural killer cell mediated cytotoxicity directed against tumor cell target	Cluster-22148.115467	0.9999999999
+BP	GO:0050848	regulation of calcium-mediated signaling	Cluster-22148.155473	0.9999999999
+MF	GO:0016836	hydro-lyase activity	Cluster-22148.178334	0.9999999999
+BP	GO:0006101	citrate metabolic process	Cluster-22148.178334	0.9999999999
+MF	GO:0051998	protein carboxyl O-methyltransferase activity	Cluster-22148.155473	0.9999999999
+BP	GO:0002855	regulation of natural killer cell mediated immune response to tumor cell	Cluster-22148.115467	0.9999999999
+BP	GO:0001912	positive regulation of leukocyte mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0042269	regulation of natural killer cell mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0002708	positive regulation of lymphocyte mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0042267	natural killer cell mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0002717	positive regulation of natural killer cell mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0002689	negative regulation of leukocyte chemotaxis	Cluster-22148.115467	0.9999999999
+MF	GO:0051539	4 iron, 4 sulfur cluster binding	Cluster-22148.178334	0.9999999999
+MF	GO:0003994	aconitate hydratase activity	Cluster-22148.178334	0.9999999999
+BP	GO:0031342	negative regulation of cell killing	Cluster-22148.115467	0.9999999999
+BP	GO:0002705	positive regulation of leukocyte mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0002834	regulation of response to tumor cell	Cluster-22148.115467	0.9999999999
+MF	GO:0008276	protein methyltransferase activity	Cluster-22148.155473	0.9999999999
+BP	GO:0035900	response to isolation stress	Cluster-22148.178334	0.9999999999
+BP	GO:0002715	regulation of natural killer cell mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0002228	natural killer cell mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0002707	negative regulation of lymphocyte mediated immunity	Cluster-22148.115467	0.9999999999
+BP	GO:0050922	negative regulation of chemotaxis	Cluster-22148.115467	0.9999999999
+BP	GO:0002685	regulation of leukocyte migration	Cluster-22148.115467	0.9999999999
+MF	GO:0004719	protein-L-isoaspartate (D-aspartate) O-methyltransferase activity	Cluster-22148.155473	0.9999999999
+BP	GO:0031343	positive regulation of cell killing	Cluster-22148.115467	0.9999999999
+BP	GO:0006099	tricarboxylic acid cycle	Cluster-22148.178334	0.9999999999
+MF	GO:0010340	carboxyl-O-methyltransferase activity	Cluster-22148.155473	0.9999999999
+BP	GO:0001909	leukocyte mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0001889	liver development	Cluster-22148.178334	0.9999999999
+BP	GO:0001910	regulation of leukocyte mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0002220	innate immune response activating cell surface receptor signaling pathway	Cluster-22148.115467	0.9999999999
+BP	GO:0002688	regulation of leukocyte chemotaxis	Cluster-22148.115467	0.9999999999
+BP	GO:1901624	negative regulation of lymphocyte chemotaxis	Cluster-22148.115467	0.9999999999
+BP	GO:2000501	regulation of natural killer cell chemotaxis	Cluster-22148.115467	0.9999999999
+MF	GO:0051538	3 iron, 4 sulfur cluster binding	Cluster-22148.178334	0.9999999999
+BP	GO:2000401	regulation of lymphocyte migration	Cluster-22148.115467	0.9999999999
+BP	GO:0002859	negative regulation of natural killer cell mediated cytotoxicity directed against tumor cell target	Cluster-22148.115467	0.9999999999
+BP	GO:0045954	positive regulation of natural killer cell mediated cytotoxicity	Cluster-22148.115467	0.9999999999
+BP	GO:0002223	stimulatory C-type lectin receptor signaling pathway	Cluster-22148.115467	0.9999999999
+CC	GO:0005839	proteasome core complex	Cluster-22148.264169	0.9999999999

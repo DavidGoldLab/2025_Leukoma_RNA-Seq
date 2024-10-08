@@ -1,0 +1,18 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0008121	0.00165791044720678	0.999998754985218	1	40	ubiquinol-cytochrome-c reductase activity	MF	0.9999999999	MF ubiquinol-cytochrome-c reductase activity	Cluster-22148.350104
+GO:0016681	0.00165791044720678	0.999998754985218	1	40	NA	NA	0.9999999999	none	Cluster-22148.350104
+GO:0045275	0.00182356103704755	0.999998490163677	1	44	respiratory chain complex III	CC	0.9999999999	CC respiratory chain complex III	Cluster-22148.350104
+GO:0016679	0.00368537235172475	0.999993756642344	1	89	oxidoreductase activity, acting on diphenols and related substances as donors	MF	0.9999999999	MF oxidoreductase activity, acting on diphenols and related substances as donors	Cluster-22148.350104
+GO:0070069	0.00830522264162069	0.999968039115432	1	201	cytochrome complex	CC	0.9999999999	CC cytochrome complex	Cluster-22148.350104
+GO:0022904	0.0117160202351509	0.999936226056764	1	284	respiratory electron transport chain	BP	0.9999999999	BP respiratory electron transport chain	Cluster-22148.350104
+GO:0098803	0.0121672352598685	0.999931199018692	1	295	respiratory chain complex	CC	0.9999999999	CC respiratory chain complex	Cluster-22148.350104
+GO:0022900	0.0125362688965947	0.999926945180271	1	304	electron transport chain	BP	0.9999999999	BP electron transport chain	Cluster-22148.350104
+GO:1990204	0.0138064051115063	0.999911324244126	1	335	oxidoreductase complex	CC	0.9999999999	CC oxidoreductase complex	Cluster-22148.350104
+GO:1902495	0.0153612767186603	0.999890131212805	1	373	transmembrane transporter complex	CC	0.9999999999	CC transmembrane transporter complex	Cluster-22148.350104
+GO:0015078	0.0154021636351643	0.999889543137827	1	374	proton transmembrane transporter activity	MF	0.9999999999	MF proton transmembrane transporter activity	Cluster-22148.350104
+GO:1990351	0.0161378585961402	0.99987869188507	1	392	transporter complex	CC	0.9999999999	CC transporter complex	Cluster-22148.350104
+GO:0006091	0.0299791212997849	0.999578756384776	1	733	generation of precursor metabolites and energy	BP	0.9999999999	BP generation of precursor metabolites and energy	Cluster-22148.350104
+GO:0055114	0.0326773215678258	0.999498967675179	1	800	NA	NA	0.9999999999	none	Cluster-22148.350104
+GO:0005743	0.0366915252332442	0.999367293279849	1	900	mitochondrial inner membrane	CC	0.9999999999	CC mitochondrial inner membrane	Cluster-22148.350104
+GO:0019866	0.0384128724468728	0.999306062255038	1	943	organelle inner membrane	CC	0.9999999999	CC organelle inner membrane	Cluster-22148.350104
+GO:0015077	0.0432015366282269	0.999120610325622	1	1063	NA	NA	0.9999999999	none	Cluster-22148.350104

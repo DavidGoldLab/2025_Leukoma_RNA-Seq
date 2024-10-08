@@ -1,0 +1,147 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:2001136	0.000498018238881003	0.999999938683803	1	2	negative regulation of endocytic recycling	BP	0.9999999999	BP negative regulation of endocytic recycling	Cluster-22148.285080
+GO:0030337	0.000706692250237585	0.999999835368586	1	3	DNA polymerase processivity factor activity	MF	0.9999999999	MF DNA polymerase processivity factor activity	Cluster-22148.287152
+GO:0030894	0.000706692250237585	0.999999835368586	1	3	replisome	CC	0.9999999999	CC replisome	Cluster-22148.287152
+GO:0032075	0.000706692250237585	0.999999835368586	1	3	positive regulation of nuclease activity	BP	0.9999999999	BP positive regulation of nuclease activity	Cluster-22148.287152
+GO:0032077	0.000706692250237585	0.999999835368586	1	3	positive regulation of deoxyribonuclease activity	BP	0.9999999999	BP positive regulation of deoxyribonuclease activity	Cluster-22148.287152
+GO:0043626	0.000706692250237585	0.999999835368586	1	3	PCNA complex	CC	0.9999999999	CC PCNA complex	Cluster-22148.287152
+GO:0044796	0.000706692250237585	0.999999835368586	1	3	DNA polymerase processivity factor complex	CC	0.9999999999	CC DNA polymerase processivity factor complex	Cluster-22148.287152
+GO:0070557	0.000706692250237585	0.999999835368586	1	3	PCNA-p21 complex	CC	0.9999999999	CC PCNA-p21 complex	Cluster-22148.287152
+GO:1902990	0.000706692250237585	0.999999835368586	1	3	mitotic telomere maintenance via semi-conservative replication	BP	0.9999999999	BP mitotic telomere maintenance via semi-conservative replication	Cluster-22148.287152
+GO:0000701	0.000962080772582274	0.999999656706341	1	4	purine-specific mismatch base pair DNA N-glycosylase activity	MF	0.9999999999	MF purine-specific mismatch base pair DNA N-glycosylase activity	Cluster-22148.287152
+GO:0032201	0.000965845310675867	0.99999965401398	1	4	telomere maintenance via semi-conservative replication	BP	0.9999999999	BP telomere maintenance via semi-conservative replication	Cluster-22148.287152
+GO:0032139	0.00117938331420703	0.99999944968348	1	5	dinucleotide insertion or deletion binding	MF	0.9999999999	MF dinucleotide insertion or deletion binding	Cluster-22148.287152
+GO:0032070	0.00122493192683363	0.99999940634448	1	5	regulation of deoxyribonuclease activity	BP	0.9999999999	BP regulation of deoxyribonuclease activity	Cluster-22148.287152
+GO:0000700	0.00163440767773085	0.999998867461577	1	7	mismatch base pair DNA N-glycosylase activity	MF	0.9999999999	MF mismatch base pair DNA N-glycosylase activity	Cluster-22148.287152
+GO:1902065	0.00164782632858834	0.999998848782771	1	7	response to L-glutamate	BP	0.9999999999	BP response to L-glutamate	Cluster-22148.287152
+GO:1900262	0.00170943162248561	0.999998761065938	1	7	regulation of DNA-directed DNA polymerase activity	BP	0.9999999999	BP regulation of DNA-directed DNA polymerase activity	Cluster-22148.287152
+GO:1900264	0.00170943162248561	0.999998761065938	1	7	positive regulation of DNA-directed DNA polymerase activity	BP	0.9999999999	BP positive regulation of DNA-directed DNA polymerase activity	Cluster-22148.287152
+GO:0032135	0.00187492061936907	0.999998478443237	1	8	DNA insertion or deletion binding	MF	0.9999999999	MF DNA insertion or deletion binding	Cluster-22148.287152
+GO:0006272	0.00197875022907554	0.999998305188238	1	8	leading strand elongation	BP	0.9999999999	BP leading strand elongation	Cluster-22148.287152
+GO:0032405	0.00268091837810055	0.999996766979898	1	11	MutLalpha complex binding	MF	0.9999999999	MF MutLalpha complex binding	Cluster-22148.287152
+GO:0006287	0.00291031523920412	0.99999615798647	1	12	base-excision repair, gap-filling	BP	0.9999999999	BP base-excision repair, gap-filling	Cluster-22148.287152
+GO:0043596	0.00315595646939955	0.999995450084168	1	13	nuclear replication fork	CC	0.9999999999	CC nuclear replication fork	Cluster-22148.287152
+GO:0032404	0.00318236905794632	0.99999537356341	1	13	mismatch repair complex binding	MF	0.9999999999	MF mismatch repair complex binding	Cluster-22148.287152
+GO:0006271	0.00324736275597392	0.999995182547857	1	13	DNA strand elongation involved in DNA replication	BP	0.9999999999	BP DNA strand elongation involved in DNA replication	Cluster-22148.287152
+GO:0005652	0.00338480242522793	0.99999473475165	1	14	nuclear lamina	CC	0.9999999999	CC nuclear lamina	Cluster-22148.287152
+GO:0032069	0.00340119639716247	0.999994683593111	1	14	regulation of nuclease activity	BP	0.9999999999	BP regulation of nuclease activity	Cluster-22148.287152
+GO:0070182	0.00364542180438455	0.99999386085794	1	15	DNA polymerase binding	MF	0.9999999999	MF DNA polymerase binding	Cluster-22148.287152
+GO:0050733	0.0037181378908072	0.999993613329984	1	15	RS domain binding	MF	0.9999999999	MF RS domain binding	Cluster-22148.293604
+GO:0019104	0.00381023928902994	0.999993262875271	1	16	DNA N-glycosylase activity	MF	0.9999999999	MF DNA N-glycosylase activity	Cluster-22148.287152
+GO:0085020	0.0039145589227346	0.999992888650461	1	16	protein K6-linked ubiquitination	BP	0.9999999999	BP protein K6-linked ubiquitination	Cluster-22148.130837
+GO:0030983	0.00409914824217335	0.999992171113923	1	17	mismatched DNA binding	MF	0.9999999999	MF mismatched DNA binding	Cluster-22148.287152
+GO:2001135	0.00420033868268563	0.999991779521921	1	17	regulation of endocytic recycling	BP	0.9999999999	BP regulation of endocytic recycling	Cluster-22148.285080
+GO:0022616	0.00421792480444832	0.999991710490076	1	17	DNA strand elongation	BP	0.9999999999	BP DNA strand elongation	Cluster-22148.287152
+GO:0140750	0.0042887365929706	0.999991429602885	1	17	nucleosome array spacer activity	MF	0.9999999999	MF nucleosome array spacer activity	Cluster-22148.212621
+GO:0033572	0.00472816409728215	0.9999895132924	1	19	transferrin transport	BP	0.9999999999	BP transferrin transport	Cluster-22148.285080
+GO:0015682	0.00495795955754602	0.999988436259017	1	20	NA	NA	0.9999999999	none	Cluster-22148.285080
+GO:0072512	0.00495795955754602	0.999988436259017	1	20	NA	NA	0.9999999999	none	Cluster-22148.285080
+GO:0007064	0.00539094805073011	0.999986260880547	1	22	mitotic sister chromatid cohesion	BP	0.9999999999	BP mitotic sister chromatid cohesion	Cluster-22148.212621
+GO:0044849	0.005644130033053	0.999984907606508	1	23	estrous cycle	BP	0.9999999999	BP estrous cycle	Cluster-22148.287152
+GO:0051276	0.00569406991291253	0.999795954125877	2	454	chromosome organization	BP	0.9999999999	BP chromosome organization	Cluster-22148.212621, Cluster-22148.287152
+GO:0019985	0.00570633760523262	0.99998457274837	1	23	translesion synthesis	BP	0.9999999999	BP translesion synthesis	Cluster-22148.287152
+GO:0042698	0.00614910467342271	0.999982017975911	1	25	ovulation cycle	BP	0.9999999999	BP ovulation cycle	Cluster-22148.287152
+GO:0035035	0.00634306088223615	0.999980805455396	1	27	histone acetyltransferase binding	MF	0.9999999999	MF histone acetyltransferase binding	Cluster-22148.287152
+GO:0006298	0.00680447353430347	0.999977877494661	1	28	mismatch repair	BP	0.9999999999	BP mismatch repair	Cluster-22148.287152
+GO:0031297	0.00727951491119925	0.999974614193025	1	30	replication fork processing	BP	0.9999999999	BP replication fork processing	Cluster-22148.287152
+GO:0000307	0.00738678855861612	0.999973830502081	1	31	cyclin-dependent protein kinase holoenzyme complex	CC	0.9999999999	CC cyclin-dependent protein kinase holoenzyme complex	Cluster-22148.287152
+GO:0006301	0.00766492082713749	0.99997181995705	1	31	postreplication repair	BP	0.9999999999	BP postreplication repair	Cluster-22148.287152
+GO:0005657	0.00769493632753601	0.999971598523033	1	31	replication fork	CC	0.9999999999	CC replication fork	Cluster-22148.287152
+GO:0045740	0.00772206098933537	0.999971340032082	1	33	positive regulation of DNA replication	BP	0.9999999999	BP positive regulation of DNA replication	Cluster-22148.287152
+GO:0004386	0.00773950369860334	0.999674963021867	2	526	helicase activity	MF	0.9999999999	MF helicase activity	Cluster-22148.212621, Cluster-22148.282020
+GO:0045005	0.00822687769366093	0.99996743479656	1	34	DNA-templated DNA replication maintenance of fidelity	BP	0.9999999999	BP DNA-templated DNA replication maintenance of fidelity	Cluster-22148.287152
+GO:0044451	0.0082804087554566	0.999194457470642	3	1673	NA	NA	0.9999999999	none	Cluster-22148.212621, Cluster-22148.287152, Cluster-22148.293604
+GO:0016581	0.00848478550825613	0.999965357873675	1	34	NuRD complex	CC	0.9999999999	CC NuRD complex	Cluster-22148.212621
+GO:0090545	0.00848478550825613	0.999965357873675	1	34	CHD-type complex	CC	0.9999999999	CC CHD-type complex	Cluster-22148.212621
+GO:0000785	0.00892837283599134	0.999596147677333	2	580	chromatin	CC	0.9999999999	CC chromatin	Cluster-22148.212621, Cluster-22148.287152
+GO:0000731	0.00965165976800717	0.999954982395754	1	39	DNA synthesis involved in DNA repair	BP	0.9999999999	BP DNA synthesis involved in DNA repair	Cluster-22148.287152
+GO:0097421	0.00979547756095911	0.99995356914497	1	41	liver regeneration	BP	0.9999999999	BP liver regeneration	Cluster-22148.287152
+GO:0070301	0.0102394546784822	0.999949198195149	1	43	cellular response to hydrogen peroxide	BP	0.9999999999	BP cellular response to hydrogen peroxide	Cluster-22148.287152
+GO:0007266	0.0119937328103488	0.999929997817717	1	51	Rho protein signal transduction	BP	0.9999999999	BP Rho protein signal transduction	Cluster-22148.285080
+GO:0000122	0.0120875538638523	0.999359769688312	2	681	negative regulation of transcription by RNA polymerase II	BP	0.9999999999	BP negative regulation of transcription by RNA polymerase II	Cluster-22148.212621, Cluster-22148.287152
+GO:0090329	0.0123306688218076	0.999925972490277	1	52	regulation of DNA-templated DNA replication	BP	0.9999999999	BP regulation of DNA-templated DNA replication	Cluster-22148.287152
+GO:1903749	0.0125771116014669	0.999923006780172	1	51	positive regulation of establishment of protein localization to mitochondrion	BP	0.9999999999	BP positive regulation of establishment of protein localization to mitochondrion	Cluster-22148.130837
+GO:1903955	0.0125771116014669	0.999923006780172	1	51	positive regulation of protein targeting to mitochondrion	BP	0.9999999999	BP positive regulation of protein targeting to mitochondrion	Cluster-22148.130837
+GO:1903214	0.0130782444749755	0.999916671946354	1	53	regulation of protein targeting to mitochondrion	BP	0.9999999999	BP regulation of protein targeting to mitochondrion	Cluster-22148.130837
+GO:1903747	0.0130782444749755	0.999916671946354	1	53	regulation of establishment of protein localization to mitochondrion	BP	0.9999999999	BP regulation of establishment of protein localization to mitochondrion	Cluster-22148.130837
+GO:0061631	0.0132054222620429	0.99991500957171	1	54	ubiquitin conjugating enzyme activity	MF	0.9999999999	MF ubiquitin conjugating enzyme activity	Cluster-22148.130837
+GO:0090568	0.0134592421445441	0.999911673071032	1	55	NA	NA	0.9999999999	none	Cluster-22148.212621
+GO:1903047	0.0135510104987058	0.999238051714551	2	713	mitotic cell cycle process	BP	0.9999999999	BP mitotic cell cycle process	Cluster-22148.212621, Cluster-22148.287152
+GO:0005700	0.0141240950816202	0.999902645956226	1	57	polytene chromosome	CC	0.9999999999	CC polytene chromosome	Cluster-22148.212621
+GO:0048609	0.0147773346150211	0.999130474809666	2	748	multicellular organismal reproductive process	BP	0.9999999999	BP multicellular organismal reproductive process	Cluster-22148.212621, Cluster-22148.287152
+GO:0003682	0.0149606285392057	0.999113968859428	2	755	chromatin binding	MF	0.9999999999	MF chromatin binding	Cluster-22148.212621, Cluster-22148.287152
+GO:2000573	0.0150429277003604	0.99988940349491	1	61	positive regulation of DNA biosynthetic process	BP	0.9999999999	BP positive regulation of DNA biosynthetic process	Cluster-22148.287152
+GO:0061650	0.0151835712185061	0.999887290165722	1	62	ubiquitin-like protein conjugating enzyme activity	MF	0.9999999999	MF ubiquitin-like protein conjugating enzyme activity	Cluster-22148.130837
+GO:0001673	0.0158837246444219	0.999876533072684	1	65	male germ cell nucleus	CC	0.9999999999	CC male germ cell nucleus	Cluster-22148.287152
+GO:0046686	0.0162619755627315	0.999870535219355	1	66	response to cadmium ion	BP	0.9999999999	BP response to cadmium ion	Cluster-22148.287152
+GO:0007062	0.0164284411526198	0.999867833336981	1	67	sister chromatid cohesion	BP	0.9999999999	BP sister chromatid cohesion	Cluster-22148.212621
+GO:0043073	0.0173702094090264	0.999852072378289	1	71	germ cell nucleus	CC	0.9999999999	CC germ cell nucleus	Cluster-22148.287152
+GO:0003684	0.0174857306884818	0.999850062678431	1	72	damaged DNA binding	MF	0.9999999999	MF damaged DNA binding	Cluster-22148.287152
+GO:0030331	0.0184914047370647	0.999832167451997	1	75	nuclear estrogen receptor binding	MF	0.9999999999	MF nuclear estrogen receptor binding	Cluster-22148.287152
+GO:0071466	0.0194125843033812	0.999814844490029	1	79	cellular response to xenobiotic stimulus	BP	0.9999999999	BP cellular response to xenobiotic stimulus	Cluster-22148.287152
+GO:0071548	0.0207330679803586	0.999788512042143	1	85	response to dexamethasone	BP	0.9999999999	BP response to dexamethasone	Cluster-22148.287152
+GO:0019904	0.0209995860388787	0.998512780260565	2	906	protein domain specific binding	MF	0.9999999999	MF protein domain specific binding	Cluster-22148.285080, Cluster-22148.293604
+GO:0071897	0.0211823019099932	0.999779183261772	1	86	DNA biosynthetic process	BP	0.9999999999	BP DNA biosynthetic process	Cluster-22148.287152
+GO:1902554	0.0213364828127298	0.999775856852507	1	89	serine/threonine protein kinase complex	CC	0.9999999999	CC serine/threonine protein kinase complex	Cluster-22148.287152
+GO:0042542	0.021375727481013	0.999775028497577	1	89	response to hydrogen peroxide	BP	0.9999999999	BP response to hydrogen peroxide	Cluster-22148.287152
+GO:2000278	0.0214376855787129	0.999773746596522	1	88	regulation of DNA biosynthetic process	BP	0.9999999999	BP regulation of DNA biosynthetic process	Cluster-22148.287152
+GO:0000723	0.0221453779019975	0.999758383141146	1	92	telomere maintenance	BP	0.9999999999	BP telomere maintenance	Cluster-22148.287152
+GO:0032200	0.0221453779019975	0.999758383141146	1	92	telomere organization	BP	0.9999999999	BP telomere organization	Cluster-22148.287152
+GO:0140658	0.0227846156944602	0.999744146456503	1	93	ATP-dependent chromatin remodeler activity	MF	0.9999999999	MF ATP-dependent chromatin remodeler activity	Cluster-22148.212621
+GO:0034451	0.0240944081304573	0.999713510843793	1	101	centriolar satellite	CC	0.9999999999	CC centriolar satellite	Cluster-22148.293604
+GO:0017053	0.0247260579897754	0.999698197659339	1	102	transcription repressor complex	CC	0.9999999999	CC transcription repressor complex	Cluster-22148.212621
+GO:0030971	0.0249848600593287	0.999691819190326	1	102	receptor tyrosine kinase binding	MF	0.9999999999	MF receptor tyrosine kinase binding	Cluster-22148.287152
+GO:0010822	0.0251744857269672	0.999687073119824	1	103	positive regulation of mitochondrion organization	BP	0.9999999999	BP positive regulation of mitochondrion organization	Cluster-22148.130837
+GO:0032355	0.0260798574487569	0.999663903794455	1	108	response to estradiol	BP	0.9999999999	BP response to estradiol	Cluster-22148.287152
+GO:0000781	0.026309421290078	0.999657876081271	1	110	chromosome, telomeric region	CC	0.9999999999	CC chromosome, telomeric region	Cluster-22148.287152
+GO:0016604	0.0265247947722512	0.997873022949366	2	1028	nuclear body	CC	0.9999999999	CC nuclear body	Cluster-22148.287152, Cluster-22148.293604
+GO:0035258	0.0269886360460688	0.999639869035493	1	111	NA	NA	0.9999999999	none	Cluster-22148.287152
+GO:0045892	0.0272154942113807	0.997787450271207	2	1049	negative regulation of DNA-templated transcription	BP	0.9999999999	BP negative regulation of DNA-templated transcription	Cluster-22148.212621, Cluster-22148.287152
+GO:1903507	0.0272154942113807	0.997787450271207	2	1049	NA	NA	0.9999999999	none	Cluster-22148.212621, Cluster-22148.287152
+GO:0006275	0.0273941311652445	0.999628797661137	1	115	regulation of DNA replication	BP	0.9999999999	BP regulation of DNA replication	Cluster-22148.287152
+GO:0000791	0.0274904559772764	0.999626227610728	1	113	euchromatin	CC	0.9999999999	CC euchromatin	Cluster-22148.212621
+GO:1902679	0.0275461865955113	0.997746064622875	2	1056	negative regulation of RNA biosynthetic process	BP	0.9999999999	BP negative regulation of RNA biosynthetic process	Cluster-22148.212621, Cluster-22148.287152
+GO:1902911	0.0281119462493309	0.999608934061703	1	117	protein kinase complex	CC	0.9999999999	CC protein kinase complex	Cluster-22148.287152
+GO:0031100	0.0282060166825512	0.999606299615893	1	117	animal organ regeneration	BP	0.9999999999	BP animal organ regeneration	Cluster-22148.287152
+GO:0022402	0.0283188581790043	0.997648353274252	2	1056	cell cycle process	BP	0.9999999999	BP cell cycle process	Cluster-22148.212621, Cluster-22148.287152
+GO:0000118	0.0296289507009431	0.999565179610394	1	123	histone deacetylase complex	CC	0.9999999999	CC histone deacetylase complex	Cluster-22148.212621
+GO:1990782	0.0297748321398309	0.999560865081339	1	123	protein tyrosine kinase binding	MF	0.9999999999	MF protein tyrosine kinase binding	Cluster-22148.287152
+GO:1902494	0.0304119909250266	0.995198499542491	3	2717	catalytic complex	CC	0.9999999999	CC catalytic complex	Cluster-22148.130837, Cluster-22148.212621, Cluster-22148.287152
+GO:0019899	0.0305774250721361	0.995162291648258	3	2751	enzyme binding	MF	0.9999999999	MF enzyme binding	Cluster-22148.130837, Cluster-22148.285080, Cluster-22148.287152
+GO:0045739	0.0308318451783929	0.999528810938372	1	128	positive regulation of DNA repair	BP	0.9999999999	BP positive regulation of DNA repair	Cluster-22148.287152
+GO:0030261	0.0315228779055966	0.999507304883167	1	129	chromosome condensation	BP	0.9999999999	BP chromosome condensation	Cluster-22148.212621
+GO:0035257	0.0315898177855778	0.999505140270774	1	131	NA	NA	0.9999999999	none	Cluster-22148.287152
+GO:0051427	0.0320687740222857	0.999489877502736	1	133	hormone receptor binding	MF	0.9999999999	MF hormone receptor binding	Cluster-22148.287152
+GO:0051253	0.0320747118417638	0.997152445301204	2	1146	negative regulation of RNA metabolic process	BP	0.9999999999	BP negative regulation of RNA metabolic process	Cluster-22148.212621, Cluster-22148.287152
+GO:0010243	0.0335032725367576	0.996955092728165	2	1166	response to organonitrogen compound	BP	0.9999999999	BP response to organonitrogen compound	Cluster-22148.130837, Cluster-22148.287152
+GO:0016799	0.0337709387942984	0.999433740648562	1	140	hydrolase activity, hydrolyzing N-glycosyl compounds	MF	0.9999999999	MF hydrolase activity, hydrolyzing N-glycosyl compounds	Cluster-22148.287152
+GO:0043200	0.0342544194475811	0.999417254680331	1	142	response to amino acid	BP	0.9999999999	BP response to amino acid	Cluster-22148.287152
+GO:0006323	0.0345386612892166	0.999407484831511	1	142	NA	NA	0.9999999999	none	Cluster-22148.212621
+GO:0044427	0.0345960460141908	0.996800923926561	2	1189	NA	NA	0.9999999999	none	Cluster-22148.212621, Cluster-22148.287152
+GO:0006986	0.0346968925137115	0.999401981246037	1	143	response to unfolded protein	BP	0.9999999999	BP response to unfolded protein	Cluster-22148.130837
+GO:0032993	0.0347266168269138	0.999400921039648	1	144	protein-DNA complex	CC	0.9999999999	CC protein-DNA complex	Cluster-22148.287152
+GO:0006826	0.035118251172888	0.999387278642512	1	143	iron ion transport	BP	0.9999999999	BP iron ion transport	Cluster-22148.285080
+GO:1990234	0.0357417971144911	0.996636390655276	2	1204	transferase complex	CC	0.9999999999	CC transferase complex	Cluster-22148.130837, Cluster-22148.287152
+GO:0034728	0.036119021204712	0.999351423334415	1	150	nucleosome organization	BP	0.9999999999	BP nucleosome organization	Cluster-22148.212621
+GO:0003676	0.0373687461835557	0.991364322137204	4	5073	nucleic acid binding	MF	0.9999999999	MF nucleic acid binding	Cluster-22148.212621, Cluster-22148.282020, Cluster-22148.287152, Cluster-22148.293604
+GO:2001022	0.03739151812138	0.999304433697272	1	156	NA	NA	0.9999999999	none	Cluster-22148.287152
+GO:0051252	0.0377314903501702	0.993525723394126	3	3021	regulation of RNA metabolic process	BP	0.9999999999	BP regulation of RNA metabolic process	Cluster-22148.212621, Cluster-22148.287152, Cluster-22148.293604
+GO:0045934	0.0379960514527349	0.996304015148244	2	1257	negative regulation of nucleobase-containing compound metabolic process	BP	0.9999999999	BP negative regulation of nucleobase-containing compound metabolic process	Cluster-22148.212621, Cluster-22148.287152
+GO:0035966	0.0380007762959365	0.999281400356249	1	157	response to topologically incorrect protein	BP	0.9999999999	BP response to topologically incorrect protein	Cluster-22148.130837
+GO:2000113	0.0383989886914337	0.996243419836812	2	1267	NA	NA	0.9999999999	none	Cluster-22148.212621, Cluster-22148.287152
+GO:1901698	0.0384161142254651	0.996240870688971	2	1257	response to nitrogen compound	BP	0.9999999999	BP response to nitrogen compound	Cluster-22148.130837, Cluster-22148.287152
+GO:0034644	0.0386560404765175	0.999256175545489	1	159	cellular response to UV	BP	0.9999999999	BP cellular response to UV	Cluster-22148.287152
+GO:0034614	0.0405270606147522	0.999181621295534	1	168	cellular response to reactive oxygen species	BP	0.9999999999	BP cellular response to reactive oxygen species	Cluster-22148.287152
+GO:0030433	0.0405998140603653	0.999178659548302	1	168	ubiquitin-dependent ERAD pathway	BP	0.9999999999	BP ubiquitin-dependent ERAD pathway	Cluster-22148.130837
+GO:0010558	0.0407475181099275	0.995883273961275	2	1308	negative regulation of macromolecule biosynthetic process	BP	0.9999999999	BP negative regulation of macromolecule biosynthetic process	Cluster-22148.212621, Cluster-22148.287152
+GO:0070603	0.0417689968830063	0.999130141312113	1	174	SWI/SNF superfamily-type complex	CC	0.9999999999	CC SWI/SNF superfamily-type complex	Cluster-22148.212621
+GO:0017124	0.0438737614829988	0.999039208889884	1	186	SH3 domain binding	MF	0.9999999999	MF SH3 domain binding	Cluster-22148.285080
+GO:0036503	0.04413177963989	0.999027872228714	1	183	ERAD pathway	BP	0.9999999999	BP ERAD pathway	Cluster-22148.130837
+GO:0010821	0.0444235981069941	0.999014873032132	1	183	regulation of mitochondrion organization	BP	0.9999999999	BP regulation of mitochondrion organization	Cluster-22148.130837
+GO:0006282	0.0451657681929912	0.9989812426063	1	189	regulation of DNA repair	BP	0.9999999999	BP regulation of DNA repair	Cluster-22148.287152
+GO:0051384	0.0462295558139778	0.998932232355568	1	191	response to glucocorticoid	BP	0.9999999999	BP response to glucocorticoid	Cluster-22148.287152
+GO:0098687	0.0473154807962133	0.998880849897946	1	198	chromosomal region	CC	0.9999999999	CC chromosomal region	Cluster-22148.287152
+GO:0019219	0.047416972426916	0.991102685073301	3	3311	regulation of nucleobase-containing compound metabolic process	BP	0.9999999999	BP regulation of nucleobase-containing compound metabolic process	Cluster-22148.212621, Cluster-22148.287152, Cluster-22148.293604
+GO:0031327	0.0475799650760034	0.994769348323274	2	1423	negative regulation of cellular biosynthetic process	BP	0.9999999999	BP negative regulation of cellular biosynthetic process	Cluster-22148.212621, Cluster-22148.287152
+GO:0071482	0.0480181268597937	0.998847080268762	1	198	cellular response to light stimulus	BP	0.9999999999	BP cellular response to light stimulus	Cluster-22148.287152
+GO:0009890	0.049018974618317	0.994522554750124	2	1447	negative regulation of biosynthetic process	BP	0.9999999999	BP negative regulation of biosynthetic process	Cluster-22148.212621, Cluster-22148.287152

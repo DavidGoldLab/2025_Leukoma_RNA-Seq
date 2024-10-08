@@ -1,0 +1,27 @@
+if (! require(edgeR)) {
+   source("https://bioconductor.org/biocLite.R")
+   biocLite("edgeR")
+   library(edgeR)
+}
+
+data = read.table("/Users/cassiopea/Downloads/2024_Leukoma_RNA-Seq-main/6_DE_Gene_Expression/../4_Final_Mapping/salmon.gene.counts.matrix", header=T, row.names=1, com='')
+col_ordering = c(9,3,19,13,16,22,5,18,24,23,12,21)
+rnaseqMatrix = data[,col_ordering]
+rnaseqMatrix = round(rnaseqMatrix)
+rnaseqMatrix = rnaseqMatrix[rowSums(cpm(rnaseqMatrix) > 1) >= 2,]
+conditions = factor(c(rep("OASH", 6), rep("SH", 6)))
+
+exp_study = DGEList(counts=rnaseqMatrix, group=conditions)
+exp_study = calcNormFactors(exp_study)
+exp_study = estimateDisp(exp_study)
+et = exactTest(exp_study, pair=c("OASH", "SH"))
+tTags = topTags(et,n=NULL)
+result_table = tTags$table
+result_table = data.frame(sampleA="OASH", sampleB="SH", result_table)
+result_table$logFC = -1 * result_table$logFC
+write.table(result_table, file='salmon.gene.counts.matrix.OASH_vs_SH.edgeR.DE_results', sep='	', quote=F, row.names=T)
+write.table(rnaseqMatrix, file='salmon.gene.counts.matrix.OASH_vs_SH.edgeR.count_matrix', sep='	', quote=F, row.names=T)
+source("/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/R/rnaseq_plot_funcs.R")
+pdf("salmon.gene.counts.matrix.OASH_vs_SH.edgeR.DE_results.MA_n_Volcano.pdf")
+plot_MA_and_Volcano(rownames(result_table), result_table$logCPM, result_table$logFC, result_table$FDR)
+dev.off()

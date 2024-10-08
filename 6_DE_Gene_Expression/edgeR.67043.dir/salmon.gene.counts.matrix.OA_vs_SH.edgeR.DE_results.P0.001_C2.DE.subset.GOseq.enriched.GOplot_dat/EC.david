@@ -1,0 +1,138 @@
+Category	ID	Term	Genes	adj_pval
+BP	GO:1900264	positive regulation of DNA-directed DNA polymerase activity	Cluster-22148.287152	0.9999999999
+CC	GO:1902911	protein kinase complex	Cluster-22148.287152	0.9999999999
+MF	GO:0043325	phosphatidylinositol-3,4-bisphosphate binding	Cluster-22148.372409	0.9999999999
+BP	GO:0097421	liver regeneration	Cluster-22148.287152	0.9999999999
+BP	GO:0000723	telomere maintenance	Cluster-22148.287152	0.9999999999
+MF	GO:0016801	hydrolase activity, acting on ether bonds	Cluster-22148.160996	0.9999999999
+BP	GO:0007064	mitotic sister chromatid cohesion	Cluster-22148.212621	0.9999999999
+CC	GO:1902554	serine/threonine protein kinase complex	Cluster-22148.287152	0.9999999999
+BP	GO:0051100	negative regulation of binding	Cluster-22148.79555	0.9999999999
+BP	GO:1903747	regulation of establishment of protein localization to mitochondrion	Cluster-22148.130837	0.9999999999
+BP	GO:0006893	Golgi to plasma membrane transport	Cluster-22148.256689	0.9999999999
+BP	GO:1903955	positive regulation of protein targeting to mitochondrion	Cluster-22148.130837	0.9999999999
+BP	GO:0070301	cellular response to hydrogen peroxide	Cluster-22148.287152	0.9999999999
+BP	GO:2000278	regulation of DNA biosynthetic process	Cluster-22148.287152	0.9999999999
+CC	GO:0031312	extrinsic component of organelle membrane	Cluster-22148.372409	0.9999999999
+BP	GO:0071897	DNA biosynthetic process	Cluster-22148.287152	0.9999999999
+BP	GO:1900121	negative regulation of receptor binding	Cluster-22148.79555	0.9999999999
+CC	GO:0034451	centriolar satellite	Cluster-22148.293604	0.9999999999
+BP	GO:0042542	response to hydrogen peroxide	Cluster-22148.287152	0.9999999999
+BP	GO:0006730	one-carbon metabolic process	Cluster-22148.160996	0.9999999999
+CC	GO:0001673	male germ cell nucleus	Cluster-22148.287152	0.9999999999
+CC	GO:0000407	phagophore assembly site	Cluster-22148.372409	0.9999999999
+BP	GO:0042698	ovulation cycle	Cluster-22148.287152	0.9999999999
+CC	GO:0005795	Golgi stack	Cluster-22148.372409	0.9999999999
+BP	GO:0032200	telomere organization	Cluster-22148.287152	0.9999999999
+BP	GO:2000573	positive regulation of DNA biosynthetic process	Cluster-22148.287152	0.9999999999
+CC	GO:0070557	PCNA-p21 complex	Cluster-22148.287152	0.9999999999
+BP	GO:0072338	lactam metabolic process	Cluster-22148.122853	0.9999999999
+MF	GO:0004386	helicase activity	Cluster-22148.212621, Cluster-22148.282020	0.9999999999
+BP	GO:0044829	positive regulation by host of viral genome replication	Cluster-22148.372409	0.9999999999
+BP	GO:0007266	Rho protein signal transduction	Cluster-22148.285080	0.9999999999
+BP	GO:0032069	regulation of nuclease activity	Cluster-22148.287152	0.9999999999
+BP	GO:0006275	regulation of DNA replication	Cluster-22148.287152	0.9999999999
+BP	GO:0006271	DNA strand elongation involved in DNA replication	Cluster-22148.287152	0.9999999999
+MF	GO:0140658	ATP-dependent chromatin remodeler activity	Cluster-22148.212621	0.9999999999
+BP	GO:1903902	positive regulation of viral life cycle	Cluster-22148.372409	0.9999999999
+BP	GO:0046686	response to cadmium ion	Cluster-22148.287152	0.9999999999
+CC	GO:0005876	spindle microtubule	Cluster-22148.339231	0.9999999999
+CC	GO:0043626	PCNA complex	Cluster-22148.287152	0.9999999999
+MF	GO:0030983	mismatched DNA binding	Cluster-22148.287152	0.9999999999
+BP	GO:0090329	regulation of DNA-templated DNA replication	Cluster-22148.287152	0.9999999999
+MF	GO:0004013	adenosylhomocysteinase activity	Cluster-22148.160996	0.9999999999
+MF	GO:0003682	chromatin binding	Cluster-22148.212621, Cluster-22148.287152	0.9999999999
+MF	GO:0005547	phosphatidylinositol-3,4,5-trisphosphate binding	Cluster-22148.372409	0.9999999999
+MF	GO:1990404	NAD+-protein ADP-ribosyltransferase activity	Cluster-22148.339231	0.9999999999
+BP	GO:1903214	regulation of protein targeting to mitochondrion	Cluster-22148.130837	0.9999999999
+MF	GO:0000700	mismatch base pair DNA N-glycosylase activity	Cluster-22148.287152	0.9999999999
+BP	GO:0031297	replication fork processing	Cluster-22148.287152	0.9999999999
+BP	GO:0044788	modulation by host of viral process	Cluster-22148.372409	0.9999999999
+CC	GO:0097629	extrinsic component of omegasome membrane	Cluster-22148.372409	0.9999999999
+BP	GO:0045005	DNA-templated DNA replication maintenance of fidelity	Cluster-22148.287152	0.9999999999
+MF	GO:0070182	DNA polymerase binding	Cluster-22148.287152	0.9999999999
+BP	GO:0032070	regulation of deoxyribonuclease activity	Cluster-22148.287152	0.9999999999
+BP	GO:0048609	multicellular organismal reproductive process	Cluster-22148.212621, Cluster-22148.287152	0.9999999999
+CC	GO:0043073	germ cell nucleus	Cluster-22148.287152	0.9999999999
+MF	GO:0032139	dinucleotide insertion or deletion binding	Cluster-22148.287152	0.9999999999
+CC	GO:0005652	nuclear lamina	Cluster-22148.287152	0.9999999999
+BP	GO:0019985	translesion synthesis	Cluster-22148.287152	0.9999999999
+BP	GO:0006287	base-excision repair, gap-filling	Cluster-22148.287152	0.9999999999
+CC	GO:0005794	Golgi apparatus	Cluster-22148.256689, Cluster-22148.372409, Cluster-22148.67360	0.9999999999
+MF	GO:0005545	1-phosphatidylinositol binding	Cluster-22148.372409	0.9999999999
+MF	GO:0140750	nucleosome array spacer activity	Cluster-22148.212621	0.9999999999
+CC	GO:0000307	cyclin-dependent protein kinase holoenzyme complex	Cluster-22148.287152	0.9999999999
+BP	GO:0000122	negative regulation of transcription by RNA polymerase II	Cluster-22148.212621, Cluster-22148.287152	0.9999999999
+CC	GO:0044232	organelle membrane contact site	Cluster-22148.372409	0.9999999999
+CC	GO:0044796	DNA polymerase processivity factor complex	Cluster-22148.287152	0.9999999999
+BP	GO:0007062	sister chromatid cohesion	Cluster-22148.212621	0.9999999999
+BP	GO:0045740	positive regulation of DNA replication	Cluster-22148.287152	0.9999999999
+MF	GO:0032266	phosphatidylinositol-3-phosphate binding	Cluster-22148.372409	0.9999999999
+BP	GO:0034067	protein localization to Golgi apparatus	Cluster-22148.256689	0.9999999999
+BP	GO:0032355	response to estradiol	Cluster-22148.287152	0.9999999999
+CC	GO:0016581	NuRD complex	Cluster-22148.212621	0.9999999999
+MF	GO:0019899	enzyme binding	Cluster-22148.130837, Cluster-22148.285080, Cluster-22148.287152, Cluster-22148.339231	0.9999999999
+CC	GO:0000781	chromosome, telomeric region	Cluster-22148.287152	0.9999999999
+CC	GO:0000785	chromatin	Cluster-22148.212621, Cluster-22148.287152	0.9999999999
+MF	GO:0032404	mismatch repair complex binding	Cluster-22148.287152	0.9999999999
+BP	GO:0046449	creatinine metabolic process	Cluster-22148.122853	0.9999999999
+BP	GO:2001136	negative regulation of endocytic recycling	Cluster-22148.285080	0.9999999999
+BP	GO:0071466	cellular response to xenobiotic stimulus	Cluster-22148.287152	0.9999999999
+BP	GO:1900262	regulation of DNA-directed DNA polymerase activity	Cluster-22148.287152	0.9999999999
+MF	GO:0061631	ubiquitin conjugating enzyme activity	Cluster-22148.130837	0.9999999999
+BP	GO:0032201	telomere maintenance via semi-conservative replication	Cluster-22148.287152	0.9999999999
+MF	GO:0019104	DNA N-glycosylase activity	Cluster-22148.287152	0.9999999999
+BP	GO:0051276	chromosome organization	Cluster-22148.212621, Cluster-22148.287152	0.9999999999
+BP	GO:1903749	positive regulation of establishment of protein localization to mitochondrion	Cluster-22148.130837	0.9999999999
+BP	GO:0032075	positive regulation of nuclease activity	Cluster-22148.287152	0.9999999999
+BP	GO:0022616	DNA strand elongation	Cluster-22148.287152	0.9999999999
+MF	GO:0035035	histone acetyltransferase binding	Cluster-22148.287152	0.9999999999
+MF	GO:0015292	uniporter activity	Cluster-22148.122853	0.9999999999
+MF	GO:0032405	MutLalpha complex binding	Cluster-22148.287152	0.9999999999
+CC	GO:0016459	myosin complex	Cluster-22148.164140, Cluster-22148.165513	0.9999999999
+BP	GO:0045070	positive regulation of viral genome replication	Cluster-22148.372409	0.9999999999
+MF	GO:0000701	purine-specific mismatch base pair DNA N-glycosylase activity	Cluster-22148.287152	0.9999999999
+MF	GO:0016802	trialkylsulfonium hydrolase activity	Cluster-22148.160996	0.9999999999
+MF	GO:0030971	receptor tyrosine kinase binding	Cluster-22148.287152	0.9999999999
+BP	GO:0032077	positive regulation of deoxyribonuclease activity	Cluster-22148.287152	0.9999999999
+BP	GO:0015881	creatine transmembrane transport	Cluster-22148.122853	0.9999999999
+BP	GO:0043001	Golgi to plasma membrane protein transport	Cluster-22148.256689	0.9999999999
+CC	GO:1990462	omegasome	Cluster-22148.372409	0.9999999999
+BP	GO:0006301	postreplication repair	Cluster-22148.287152	0.9999999999
+CC	GO:0005700	polytene chromosome	Cluster-22148.212621	0.9999999999
+BP	GO:0000731	DNA synthesis involved in DNA repair	Cluster-22148.287152	0.9999999999
+BP	GO:2001135	regulation of endocytic recycling	Cluster-22148.285080	0.9999999999
+MF	GO:0030331	nuclear estrogen receptor binding	Cluster-22148.287152	0.9999999999
+CC	GO:0090545	CHD-type complex	Cluster-22148.212621	0.9999999999
+CC	GO:0000118	histone deacetylase complex	Cluster-22148.212621	0.9999999999
+BP	GO:0071548	response to dexamethasone	Cluster-22148.287152	0.9999999999
+CC	GO:0005657	replication fork	Cluster-22148.287152	0.9999999999
+BP	GO:0031100	animal organ regeneration	Cluster-22148.287152	0.9999999999
+BP	GO:1902990	mitotic telomere maintenance via semi-conservative replication	Cluster-22148.287152	0.9999999999
+BP	GO:0099560	synaptic membrane adhesion	Cluster-22148.79555	0.9999999999
+CC	GO:0017053	transcription repressor complex	Cluster-22148.212621	0.9999999999
+MF	GO:0061650	ubiquitin-like protein conjugating enzyme activity	Cluster-22148.130837	0.9999999999
+MF	GO:0032135	DNA insertion or deletion binding	Cluster-22148.287152	0.9999999999
+BP	GO:1902065	response to L-glutamate	Cluster-22148.287152	0.9999999999
+BP	GO:0006298	mismatch repair	Cluster-22148.287152	0.9999999999
+MF	GO:0030337	DNA polymerase processivity factor activity	Cluster-22148.287152	0.9999999999
+MF	GO:0003950	NAD+ ADP-ribosyltransferase activity	Cluster-22148.339231	0.9999999999
+BP	GO:0140042	lipid droplet formation	Cluster-22148.372409	0.9999999999
+BP	GO:0010822	positive regulation of mitochondrion organization	Cluster-22148.130837	0.9999999999
+CC	GO:0030894	replisome	Cluster-22148.287152	0.9999999999
+CC	GO:0044233	mitochondria-associated endoplasmic reticulum membrane	Cluster-22148.372409	0.9999999999
+BP	GO:0085020	protein K6-linked ubiquitination	Cluster-22148.130837	0.9999999999
+BP	GO:0044794	positive regulation by host of viral process	Cluster-22148.372409	0.9999999999
+BP	GO:1900120	regulation of receptor binding	Cluster-22148.79555	0.9999999999
+BP	GO:0044849	estrous cycle	Cluster-22148.287152	0.9999999999
+CC	GO:0043596	nuclear replication fork	Cluster-22148.287152	0.9999999999
+CC	GO:0000791	euchromatin	Cluster-22148.212621	0.9999999999
+BP	GO:0043393	regulation of protein binding	Cluster-22148.79555	0.9999999999
+BP	GO:0006272	leading strand elongation	Cluster-22148.287152	0.9999999999
+BP	GO:0033572	transferrin transport	Cluster-22148.285080	0.9999999999
+BP	GO:0032091	negative regulation of protein binding	Cluster-22148.79555	0.9999999999
+BP	GO:0044827	modulation by host of viral genome replication	Cluster-22148.372409	0.9999999999
+MF	GO:0005308	creatine transmembrane transporter activity	Cluster-22148.122853	0.9999999999
+MF	GO:0003684	damaged DNA binding	Cluster-22148.287152	0.9999999999
+MF	GO:0050733	RS domain binding	Cluster-22148.293604	0.9999999999
+BP	GO:1903047	mitotic cell cycle process	Cluster-22148.212621, Cluster-22148.287152	0.9999999999

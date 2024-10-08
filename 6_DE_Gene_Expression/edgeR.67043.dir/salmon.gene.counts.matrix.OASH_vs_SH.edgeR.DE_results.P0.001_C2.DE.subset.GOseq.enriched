@@ -1,0 +1,44 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0008015	0.00170494228201595	0.999998714061616	1	57	blood circulation	BP	0.9999999999	BP blood circulation	Cluster-22148.182174
+GO:0120323	0.00236324780910486	0.999997516417169	1	79	lipid ubiquitination	BP	0.9999999999	BP lipid ubiquitination	Cluster-22148.182174
+GO:0098792	0.0025124541071091	0.999997190613508	1	84	xenophagy	BP	0.9999999999	BP xenophagy	Cluster-22148.182174
+GO:2000051	0.00269179047047501	0.999996772434857	1	90	negative regulation of non-canonical Wnt signaling pathway	BP	0.9999999999	BP negative regulation of non-canonical Wnt signaling pathway	Cluster-22148.182174
+GO:0140042	0.0027218053003427	0.999996699611742	1	91	lipid droplet formation	BP	0.9999999999	BP lipid droplet formation	Cluster-22148.182174
+GO:2000050	0.00305027950037446	0.999995849478271	1	102	regulation of non-canonical Wnt signaling pathway	BP	0.9999999999	BP regulation of non-canonical Wnt signaling pathway	Cluster-22148.182174
+GO:0002040	0.00391609261679692	0.999993141669889	1	131	sprouting angiogenesis	BP	0.9999999999	BP sprouting angiogenesis	Cluster-22148.182174
+GO:0070534	0.0046026753673445	0.999990512725416	1	154	protein K63-linked ubiquitination	BP	0.9999999999	BP protein K63-linked ubiquitination	Cluster-22148.182174
+GO:0051865	0.00522915013835188	0.999987741887787	1	175	protein autoubiquitination	BP	0.9999999999	BP protein autoubiquitination	Cluster-22148.182174
+GO:0005811	0.00618218922251268	0.999982845265951	1	207	lipid droplet	CC	0.9999999999	CC lipid droplet	Cluster-22148.182174
+GO:0030178	0.00680750959786558	0.99997918530349	1	228	negative regulation of Wnt signaling pathway	BP	0.9999999999	BP negative regulation of Wnt signaling pathway	Cluster-22148.182174
+GO:0016236	0.00799705321620816	0.999971243940398	1	268	macroautophagy	BP	0.9999999999	BP macroautophagy	Cluster-22148.182174
+GO:0003013	0.0100456466249154	0.999954554974472	1	337	circulatory system process	BP	0.9999999999	BP circulatory system process	Cluster-22148.182174
+GO:0030111	0.0126558214039794	0.99992775668195	1	425	regulation of Wnt signaling pathway	BP	0.9999999999	BP regulation of Wnt signaling pathway	Cluster-22148.182174
+GO:0045765	0.0127143983078195	0.999927083999154	1	427	regulation of angiogenesis	BP	0.9999999999	BP regulation of angiogenesis	Cluster-22148.182174
+GO:0000209	0.0133067732344658	0.999920105383177	1	447	protein polyubiquitination	BP	0.9999999999	BP protein polyubiquitination	Cluster-22148.182174
+GO:1901342	0.0138390567164751	0.999913561298796	1	465	regulation of vasculature development	BP	0.9999999999	BP regulation of vasculature development	Cluster-22148.182174
+GO:0019216	0.0159085257699998	0.999885656756551	1	535	regulation of lipid metabolic process	BP	0.9999999999	BP regulation of lipid metabolic process	Cluster-22148.182174
+GO:0001525	0.016616442519234	0.999875211188159	1	559	angiogenesis	BP	0.9999999999	BP angiogenesis	Cluster-22148.182174
+GO:0042742	0.0171488216532554	0.999867053115184	1	577	defense response to bacterium	BP	0.9999999999	BP defense response to bacterium	Cluster-22148.182174
+GO:0006914	0.0172663868400634	0.999865216519595	1	581	autophagy	BP	0.9999999999	BP autophagy	Cluster-22148.182174
+GO:0061630	0.0193863265010548	0.99982992158391	1	653	ubiquitin protein ligase activity	MF	0.9999999999	MF ubiquitin protein ligase activity	Cluster-22148.182174
+GO:0061659	0.0198275123213362	0.999822057051762	1	668	ubiquitin-like protein ligase activity	MF	0.9999999999	MF ubiquitin-like protein ligase activity	Cluster-22148.182174
+GO:0009617	0.0247011800402232	0.999723243764921	1	834	response to bacterium	BP	0.9999999999	BP response to bacterium	Cluster-22148.182174
+GO:0004842	0.0249340463040069	0.999717973309282	1	842	ubiquitin-protein transferase activity	MF	0.9999999999	MF ubiquitin-protein transferase activity	Cluster-22148.182174
+GO:0019787	0.0257533517135527	0.999699031115842	1	870	ubiquitin-like protein transferase activity	MF	0.9999999999	MF ubiquitin-like protein transferase activity	Cluster-22148.182174
+GO:0098542	0.0265153423711084	0.999680856052119	1	896	defense response to other organism	BP	0.9999999999	BP defense response to other organism	Cluster-22148.182174
+GO:0006511	0.0272466223102406	0.999662907349016	1	921	ubiquitin-dependent protein catabolic process	BP	0.9999999999	BP ubiquitin-dependent protein catabolic process	Cluster-22148.182174
+GO:0019941	0.0284443426217586	0.99963243826012	1	962	modification-dependent protein catabolic process	BP	0.9999999999	BP modification-dependent protein catabolic process	Cluster-22148.182174
+GO:0043632	0.0291154226068016	0.999614784052115	1	985	modification-dependent macromolecule catabolic process	BP	0.9999999999	BP modification-dependent macromolecule catabolic process	Cluster-22148.182174
+GO:0016567	0.0335079926341508	0.999488873535486	1	1136	protein ubiquitination	BP	0.9999999999	BP protein ubiquitination	Cluster-22148.182174
+GO:0051603	0.0342665981261176	0.99946530544112	1	1162	proteolysis involved in protein catabolic process	BP	0.9999999999	BP proteolysis involved in protein catabolic process	Cluster-22148.182174
+GO:0032446	0.0356263185561518	0.999421714827818	1	1209	protein modification by small protein conjugation	BP	0.9999999999	BP protein modification by small protein conjugation	Cluster-22148.182174
+GO:0051707	0.0377997290851543	0.999348441262497	1	1284	response to other organism	BP	0.9999999999	BP response to other organism	Cluster-22148.182174
+GO:0070647	0.0388677688422814	0.999310809042506	1	1321	protein modification by small protein conjugation or removal	BP	0.9999999999	BP protein modification by small protein conjugation or removal	Cluster-22148.182174
+GO:0005730	0.0395077626021364	0.999287745276322	1	1343	nucleolus	CC	0.9999999999	CC nucleolus	Cluster-22148.182174
+GO:0044265	0.0400554769041726	0.999267700966203	1	1362	NA	NA	0.9999999999	none	Cluster-22148.182174
+GO:0016887	0.0415849679848592	0.999210231298911	1	1415	ATP hydrolysis activity	MF	0.9999999999	MF ATP hydrolysis activity	Cluster-22148.182174
+GO:0043207	0.0453817420196085	0.99905802601568	1	1547	response to external biotic stimulus	BP	0.9999999999	BP response to external biotic stimulus	Cluster-22148.182174
+GO:0022603	0.0460952913587819	0.999027898778796	1	1572	regulation of anatomical structure morphogenesis	BP	0.9999999999	BP regulation of anatomical structure morphogenesis	Cluster-22148.182174
+GO:0009607	0.0467594673697301	0.998999422566254	1	1595	response to biotic stimulus	BP	0.9999999999	BP response to biotic stimulus	Cluster-22148.182174
+GO:0009968	0.0468708724953891	0.998994605096643	1	1599	negative regulation of signal transduction	BP	0.9999999999	BP negative regulation of signal transduction	Cluster-22148.182174
+GO:0048646	0.0477880445059857	0.998954496691482	1	1631	anatomical structure formation involved in morphogenesis	BP	0.9999999999	BP anatomical structure formation involved in morphogenesis	Cluster-22148.182174

@@ -1,0 +1,43 @@
+Category	ID	Term	Genes	adj_pval
+BP	GO:0140042	lipid droplet formation	Cluster-22148.182174	0.9999999999
+CC	GO:0005811	lipid droplet	Cluster-22148.182174	0.9999999999
+BP	GO:0016567	protein ubiquitination	Cluster-22148.182174	0.9999999999
+BP	GO:0051865	protein autoubiquitination	Cluster-22148.182174	0.9999999999
+BP	GO:0045765	regulation of angiogenesis	Cluster-22148.182174	0.9999999999
+BP	GO:0006914	autophagy	Cluster-22148.182174	0.9999999999
+BP	GO:2000051	negative regulation of non-canonical Wnt signaling pathway	Cluster-22148.182174	0.9999999999
+BP	GO:0098792	xenophagy	Cluster-22148.182174	0.9999999999
+BP	GO:0051707	response to other organism	Cluster-22148.182174	0.9999999999
+BP	GO:0048646	anatomical structure formation involved in morphogenesis	Cluster-22148.182174	0.9999999999
+BP	GO:0070647	protein modification by small protein conjugation or removal	Cluster-22148.182174	0.9999999999
+BP	GO:0051603	proteolysis involved in protein catabolic process	Cluster-22148.182174	0.9999999999
+BP	GO:0008015	blood circulation	Cluster-22148.182174	0.9999999999
+MF	GO:0061630	ubiquitin protein ligase activity	Cluster-22148.182174	0.9999999999
+BP	GO:0043632	modification-dependent macromolecule catabolic process	Cluster-22148.182174	0.9999999999
+BP	GO:0019941	modification-dependent protein catabolic process	Cluster-22148.182174	0.9999999999
+BP	GO:0006511	ubiquitin-dependent protein catabolic process	Cluster-22148.182174	0.9999999999
+BP	GO:0043207	response to external biotic stimulus	Cluster-22148.182174	0.9999999999
+BP	GO:0032446	protein modification by small protein conjugation	Cluster-22148.182174	0.9999999999
+BP	GO:0000209	protein polyubiquitination	Cluster-22148.182174	0.9999999999
+BP	GO:0009617	response to bacterium	Cluster-22148.182174	0.9999999999
+MF	GO:0061659	ubiquitin-like protein ligase activity	Cluster-22148.182174	0.9999999999
+BP	GO:0098542	defense response to other organism	Cluster-22148.182174	0.9999999999
+BP	GO:2000050	regulation of non-canonical Wnt signaling pathway	Cluster-22148.182174	0.9999999999
+BP	GO:1901342	regulation of vasculature development	Cluster-22148.182174	0.9999999999
+BP	GO:0001525	angiogenesis	Cluster-22148.182174	0.9999999999
+BP	GO:0016236	macroautophagy	Cluster-22148.182174	0.9999999999
+MF	GO:0016887	ATP hydrolysis activity	Cluster-22148.182174	0.9999999999
+BP	GO:0022603	regulation of anatomical structure morphogenesis	Cluster-22148.182174	0.9999999999
+BP	GO:0002040	sprouting angiogenesis	Cluster-22148.182174	0.9999999999
+CC	GO:0005730	nucleolus	Cluster-22148.182174	0.9999999999
+BP	GO:0009968	negative regulation of signal transduction	Cluster-22148.182174	0.9999999999
+BP	GO:0030178	negative regulation of Wnt signaling pathway	Cluster-22148.182174	0.9999999999
+MF	GO:0019787	ubiquitin-like protein transferase activity	Cluster-22148.182174	0.9999999999
+BP	GO:0003013	circulatory system process	Cluster-22148.182174	0.9999999999
+MF	GO:0004842	ubiquitin-protein transferase activity	Cluster-22148.182174	0.9999999999
+BP	GO:0120323	lipid ubiquitination	Cluster-22148.182174	0.9999999999
+BP	GO:0042742	defense response to bacterium	Cluster-22148.182174	0.9999999999
+BP	GO:0030111	regulation of Wnt signaling pathway	Cluster-22148.182174	0.9999999999
+BP	GO:0070534	protein K63-linked ubiquitination	Cluster-22148.182174	0.9999999999
+BP	GO:0019216	regulation of lipid metabolic process	Cluster-22148.182174	0.9999999999
+BP	GO:0009607	response to biotic stimulus	Cluster-22148.182174	0.9999999999

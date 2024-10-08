@@ -1,0 +1,27 @@
+Category	ID	Term	Genes	adj_pval
+MF	GO:0003844	1,4-alpha-glucan branching enzyme activity	Cluster-22148.207469	0.9999999999
+BP	GO:0005976	polysaccharide metabolic process	Cluster-22148.207469	0.9999999999
+BP	GO:0016051	carbohydrate biosynthetic process	Cluster-22148.207469	0.9999999999
+CC	GO:1990204	oxidoreductase complex	Cluster-22148.350104	0.9999999999
+MF	GO:0015078	proton transmembrane transporter activity	Cluster-22148.350104	0.9999999999
+BP	GO:0006112	energy reserve metabolic process	Cluster-22148.207469	0.9999999999
+BP	GO:0044042	glucan metabolic process	Cluster-22148.207469	0.9999999999
+BP	GO:0022904	respiratory electron transport chain	Cluster-22148.350104	0.9999999999
+BP	GO:0022900	electron transport chain	Cluster-22148.350104	0.9999999999
+CC	GO:0070069	cytochrome complex	Cluster-22148.350104	0.9999999999
+BP	GO:0015980	energy derivation by oxidation of organic compounds	Cluster-22148.207469	0.9999999999
+CC	GO:1902495	transmembrane transporter complex	Cluster-22148.350104	0.9999999999
+MF	GO:0016757	glycosyltransferase activity	Cluster-22148.207469	0.9999999999
+BP	GO:0009250	glucan biosynthetic process	Cluster-22148.207469	0.9999999999
+MF	GO:0016758	hexosyltransferase activity	Cluster-22148.207469	0.9999999999
+MF	GO:0016679	oxidoreductase activity, acting on diphenols and related substances as donors	Cluster-22148.350104	0.9999999999
+CC	GO:1990351	transporter complex	Cluster-22148.350104	0.9999999999
+MF	GO:0004553	hydrolase activity, hydrolyzing O-glycosyl compounds	Cluster-22148.207469	0.9999999999
+MF	GO:0008121	ubiquinol-cytochrome-c reductase activity	Cluster-22148.350104	0.9999999999
+BP	GO:0000271	polysaccharide biosynthetic process	Cluster-22148.207469	0.9999999999
+BP	GO:0006091	generation of precursor metabolites and energy	Cluster-22148.207469, Cluster-22148.350104	0.9999999999
+BP	GO:0005978	glycogen biosynthetic process	Cluster-22148.207469	0.9999999999
+CC	GO:0098803	respiratory chain complex	Cluster-22148.350104	0.9999999999
+CC	GO:0045275	respiratory chain complex III	Cluster-22148.350104	0.9999999999
+MF	GO:0102752	1,4-alpha-glucan branching enzyme activity (using a glucosylated glycogenin as primer for glycogen synthesis)	Cluster-22148.207469	0.9999999999
+BP	GO:0005977	glycogen metabolic process	Cluster-22148.207469	0.9999999999

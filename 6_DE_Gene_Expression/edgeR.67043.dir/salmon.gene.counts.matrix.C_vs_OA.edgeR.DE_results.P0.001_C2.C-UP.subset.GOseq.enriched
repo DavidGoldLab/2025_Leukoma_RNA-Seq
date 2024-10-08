@@ -1,0 +1,3 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0019773	0.00515522508627121	0.999987344599068	1	29	proteasome core complex, alpha-subunit complex	CC	0.9999999999	CC proteasome core complex, alpha-subunit complex	Cluster-22148.264169
+GO:0005839	0.00962832133491867	0.999955056718077	1	54	proteasome core complex	CC	0.9999999999	CC proteasome core complex	Cluster-22148.264169

@@ -1,0 +1,64 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:1990462	0.00153322689075578	0.999998985848312	1	8	omegasome	CC	0.9999999999	CC omegasome	Cluster-22148.372409
+GO:0004013	0.00170096140464109	0.999998731931603	1	9	adenosylhomocysteinase activity	MF	0.9999999999	MF adenosylhomocysteinase activity	Cluster-22148.160996
+GO:0016802	0.00170096140464109	0.999998731931603	1	9	trialkylsulfonium hydrolase activity	MF	0.9999999999	MF trialkylsulfonium hydrolase activity	Cluster-22148.160996
+GO:0097629	0.00170583127423606	0.999998724657888	1	9	extrinsic component of omegasome membrane	CC	0.9999999999	CC extrinsic component of omegasome membrane	Cluster-22148.372409
+GO:1900120	0.0025602880247298	0.999997015652501	1	13	regulation of receptor binding	BP	0.9999999999	BP regulation of receptor binding	Cluster-22148.79555
+GO:1900121	0.0025602880247298	0.999997015652501	1	13	negative regulation of receptor binding	BP	0.9999999999	BP negative regulation of receptor binding	Cluster-22148.79555
+GO:0016801	0.00298723267565462	0.999995873284349	1	16	hydrolase activity, acting on ether bonds	MF	0.9999999999	MF hydrolase activity, acting on ether bonds	Cluster-22148.160996
+GO:0015292	0.00355298271894034	0.999994083199757	1	20	uniporter activity	MF	0.9999999999	MF uniporter activity	Cluster-22148.122853
+GO:0005545	0.00415798087883392	0.999991856155738	1	22	1-phosphatidylinositol binding	MF	0.9999999999	MF 1-phosphatidylinositol binding	Cluster-22148.372409
+GO:0016459	0.00427877949243092	0.999868185139006	2	488	myosin complex	CC	0.9999999999	CC myosin complex	Cluster-22148.164140, Cluster-22148.165513
+GO:0046449	0.0043475633722326	0.999991060708972	1	24	creatinine metabolic process	BP	0.9999999999	BP creatinine metabolic process	Cluster-22148.122853
+GO:0072338	0.00475874327874356	0.9999892525185	1	26	lactam metabolic process	BP	0.9999999999	BP lactam metabolic process	Cluster-22148.122853
+GO:0044829	0.00558869989494455	0.999985093467977	1	30	positive regulation by host of viral genome replication	BP	0.9999999999	BP positive regulation by host of viral genome replication	Cluster-22148.372409
+GO:0034067	0.00572929387165816	0.99998431586522	1	31	protein localization to Golgi apparatus	BP	0.9999999999	BP protein localization to Golgi apparatus	Cluster-22148.256689
+GO:0044794	0.00680711329013457	0.999977731837195	1	37	positive regulation by host of viral process	BP	0.9999999999	BP positive regulation by host of viral process	Cluster-22148.372409
+GO:0043325	0.00682000182959373	0.999977664540734	1	36	phosphatidylinositol-3,4-bisphosphate binding	MF	0.9999999999	MF phosphatidylinositol-3,4-bisphosphate binding	Cluster-22148.372409
+GO:0044233	0.00704099503786182	0.999976173406841	1	37	mitochondria-associated endoplasmic reticulum membrane	CC	0.9999999999	CC mitochondria-associated endoplasmic reticulum membrane	Cluster-22148.372409
+GO:0032091	0.0075848955532981	0.999972287411051	1	40	negative regulation of protein binding	BP	0.9999999999	BP negative regulation of protein binding	Cluster-22148.79555
+GO:0044827	0.00817032623072399	0.999967763067421	1	44	modulation by host of viral genome replication	BP	0.9999999999	BP modulation by host of viral genome replication	Cluster-22148.372409
+GO:0044232	0.00893785235956437	0.999961354449061	1	47	organelle membrane contact site	CC	0.9999999999	CC organelle membrane contact site	Cluster-22148.372409
+GO:0099560	0.00914665957555097	0.999959524735837	1	47	synaptic membrane adhesion	BP	0.9999999999	BP synaptic membrane adhesion	Cluster-22148.79555
+GO:0031312	0.00934645874821205	0.999957679250976	1	50	extrinsic component of organelle membrane	CC	0.9999999999	CC extrinsic component of organelle membrane	Cluster-22148.372409
+GO:0051100	0.00949339529090063	0.999956318489977	1	51	negative regulation of binding	BP	0.9999999999	BP negative regulation of binding	Cluster-22148.79555
+GO:0000407	0.00965699806024321	0.999954763390022	1	53	phagophore assembly site	CC	0.9999999999	CC phagophore assembly site	Cluster-22148.372409
+GO:0045070	0.0112917526858633	0.999937961020073	1	61	positive regulation of viral genome replication	BP	0.9999999999	BP positive regulation of viral genome replication	Cluster-22148.372409
+GO:0005308	0.0113993225576389	0.999936754084344	1	62	creatine transmembrane transporter activity	MF	0.9999999999	MF creatine transmembrane transporter activity	Cluster-22148.122853
+GO:0015881	0.0113993225576389	0.999936754084344	1	62	creatine transmembrane transport	BP	0.9999999999	BP creatine transmembrane transport	Cluster-22148.122853
+GO:0005547	0.0124278240134772	0.999924725341198	1	66	phosphatidylinositol-3,4,5-trisphosphate binding	MF	0.9999999999	MF phosphatidylinositol-3,4,5-trisphosphate binding	Cluster-22148.372409
+GO:0005876	0.0132960958526303	0.999913738423892	1	70	spindle microtubule	CC	0.9999999999	CC spindle microtubule	Cluster-22148.339231
+GO:0032266	0.0139643181656368	0.999904736510473	1	75	phosphatidylinositol-3-phosphate binding	MF	0.9999999999	MF phosphatidylinositol-3-phosphate binding	Cluster-22148.372409
+GO:0044788	0.014310265132701	0.999899911073238	1	77	modulation by host of viral process	BP	0.9999999999	BP modulation by host of viral process	Cluster-22148.372409
+GO:0043001	0.0148483234280318	0.99989218721324	1	79	Golgi to plasma membrane protein transport	BP	0.9999999999	BP Golgi to plasma membrane protein transport	Cluster-22148.256689
+GO:0005795	0.0160619212856744	0.999873676679921	1	85	Golgi stack	CC	0.9999999999	CC Golgi stack	Cluster-22148.372409
+GO:1990404	0.0165429768209426	0.999865902972402	1	89	NAD+-protein ADP-ribosyltransferase activity	MF	0.9999999999	MF NAD+-protein ADP-ribosyltransferase activity	Cluster-22148.339231
+GO:0006730	0.0191813095363907	0.9998193129219	1	101	one-carbon metabolic process	BP	0.9999999999	BP one-carbon metabolic process	Cluster-22148.160996
+GO:1903902	0.0195250027427718	0.999812669755825	1	106	positive regulation of viral life cycle	BP	0.9999999999	BP positive regulation of viral life cycle	Cluster-22148.372409
+GO:0140042	0.019896167826239	0.999805472413875	1	105	lipid droplet formation	BP	0.9999999999	BP lipid droplet formation	Cluster-22148.372409
+GO:0043393	0.0201902567232146	0.999799588620045	1	109	regulation of protein binding	BP	0.9999999999	BP regulation of protein binding	Cluster-22148.79555
+GO:0003950	0.0204023737401075	0.99979532336429	1	110	NAD+ ADP-ribosyltransferase activity	MF	0.9999999999	MF NAD+ ADP-ribosyltransferase activity	Cluster-22148.339231
+GO:0006893	0.0209151700295137	0.999784832151819	1	112	Golgi to plasma membrane transport	BP	0.9999999999	BP Golgi to plasma membrane transport	Cluster-22148.256689
+GO:0090002	0.0213816827773329	0.999775054865984	1	114	NA	NA	0.9999999999	none	Cluster-22148.256689
+GO:0051851	0.0229616246875874	0.999740257447831	1	124	modulation by host of symbiont process	BP	0.9999999999	BP modulation by host of symbiont process	Cluster-22148.372409
+GO:0044430	0.0232855200780934	0.996697762110121	3	3155	NA	NA	0.9999999999	none	Cluster-22148.164140, Cluster-22148.165513, Cluster-22148.339231
+GO:0048524	0.0235405261517068	0.999726871690517	1	128	positive regulation of viral process	BP	0.9999999999	BP positive regulation of viral process	Cluster-22148.372409
+GO:0005776	0.0241751324802928	0.99971183234426	1	131	autophagosome	CC	0.9999999999	CC autophagosome	Cluster-22148.372409
+GO:0051702	0.0242531785520263	0.999709960881302	1	131	biological process involved in interaction with symbiont	BP	0.9999999999	BP biological process involved in interaction with symbiont	Cluster-22148.372409
+GO:0051184	0.0244011530335864	0.999706413067225	1	130	NA	NA	0.9999999999	none	Cluster-22148.122853
+GO:0035335	0.0256535000234563	0.999675325374436	1	132	peptidyl-tyrosine dephosphorylation	BP	0.9999999999	BP peptidyl-tyrosine dephosphorylation	Cluster-22148.79555
+GO:0045069	0.0262178546801942	0.999660636040045	1	142	regulation of viral genome replication	BP	0.9999999999	BP regulation of viral genome replication	Cluster-22148.372409
+GO:0051098	0.0281018125225058	0.999609659902203	1	153	regulation of binding	BP	0.9999999999	BP regulation of binding	Cluster-22148.79555
+GO:0051817	0.0286087232360625	0.999595362418576	1	154	NA	NA	0.9999999999	none	Cluster-22148.372409
+GO:0019898	0.0286245697424692	0.999594928941806	1	153	extrinsic component of membrane	CC	0.9999999999	CC extrinsic component of membrane	Cluster-22148.372409
+GO:0016763	0.0308284093659148	0.999529520949158	1	168	pentosyltransferase activity	MF	0.9999999999	MF pentosyltransferase activity	Cluster-22148.339231
+GO:0098876	0.031156562790443	0.999519396811571	1	168	vesicle-mediated transport to the plasma membrane	BP	0.9999999999	BP vesicle-mediated transport to the plasma membrane	Cluster-22148.256689
+GO:0005794	0.0333116071368863	0.996994585577493	2	1511	Golgi apparatus	CC	0.9999999999	CC Golgi apparatus	Cluster-22148.256689, Cluster-22148.372409
+GO:0072349	0.0370905506610641	0.999316840659288	1	200	modified amino acid transmembrane transporter activity	MF	0.9999999999	MF modified amino acid transmembrane transporter activity	Cluster-22148.122853
+GO:1902936	0.0380691264169892	0.999279967361496	1	206	phosphatidylinositol bisphosphate binding	MF	0.9999999999	MF phosphatidylinositol bisphosphate binding	Cluster-22148.372409
+GO:0006892	0.038959509696197	0.99924557208584	1	211	post-Golgi vesicle-mediated transport	BP	0.9999999999	BP post-Golgi vesicle-mediated transport	Cluster-22148.256689
+GO:0005811	0.0417937725736484	0.999130715136578	1	224	lipid droplet	CC	0.9999999999	CC lipid droplet	Cluster-22148.372409
+GO:1903900	0.042756187317395	0.999089740881003	1	234	regulation of viral life cycle	BP	0.9999999999	BP regulation of viral life cycle	Cluster-22148.372409
+GO:0008028	0.0439501920739403	0.999037738115233	1	237	monocarboxylic acid transmembrane transporter activity	MF	0.9999999999	MF monocarboxylic acid transmembrane transporter activity	Cluster-22148.122853
+GO:0008201	0.0440303036492295	0.999034251530915	1	234	heparin binding	MF	0.9999999999	MF heparin binding	Cluster-22148.79555
+GO:0072337	0.0489160113460704	0.998805421211684	1	264	modified amino acid transport	BP	0.9999999999	BP modified amino acid transport	Cluster-22148.122853

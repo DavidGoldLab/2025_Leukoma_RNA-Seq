@@ -1,0 +1,70 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:1901624	0.000457851435659607	0.999999948212579	1	2	negative regulation of lymphocyte chemotaxis	BP	0.9999999999	BP negative regulation of lymphocyte chemotaxis	Cluster-22148.115467
+GO:2000501	0.000457851435659607	0.999999948212579	1	2	regulation of natural killer cell chemotaxis	BP	0.9999999999	BP regulation of natural killer cell chemotaxis	Cluster-22148.115467
+GO:2000502	0.000457851435659607	0.999999948212579	1	2	negative regulation of natural killer cell chemotaxis	BP	0.9999999999	BP negative regulation of natural killer cell chemotaxis	Cluster-22148.115467
+GO:0002835	0.000695357698117942	0.999999840718395	1	3	negative regulation of response to tumor cell	BP	0.9999999999	BP negative regulation of response to tumor cell	Cluster-22148.115467
+GO:0002838	0.000695357698117942	0.999999840718395	1	3	negative regulation of immune response to tumor cell	BP	0.9999999999	BP negative regulation of immune response to tumor cell	Cluster-22148.115467
+GO:0002855	0.000695357698117942	0.999999840718395	1	3	regulation of natural killer cell mediated immune response to tumor cell	BP	0.9999999999	BP regulation of natural killer cell mediated immune response to tumor cell	Cluster-22148.115467
+GO:0002856	0.000695357698117942	0.999999840718395	1	3	negative regulation of natural killer cell mediated immune response to tumor cell	BP	0.9999999999	BP negative regulation of natural killer cell mediated immune response to tumor cell	Cluster-22148.115467
+GO:0002858	0.000695357698117942	0.999999840718395	1	3	regulation of natural killer cell mediated cytotoxicity directed against tumor cell target	BP	0.9999999999	BP regulation of natural killer cell mediated cytotoxicity directed against tumor cell target	Cluster-22148.115467
+GO:0002859	0.000695357698117942	0.999999840718395	1	3	negative regulation of natural killer cell mediated cytotoxicity directed against tumor cell target	BP	0.9999999999	BP negative regulation of natural killer cell mediated cytotoxicity directed against tumor cell target	Cluster-22148.115467
+GO:0002716	0.0016308542182445	0.999998873162764	1	7	negative regulation of natural killer cell mediated immunity	BP	0.9999999999	BP negative regulation of natural killer cell mediated immunity	Cluster-22148.115467
+GO:0045953	0.0016308542182445	0.999998873162764	1	7	negative regulation of natural killer cell mediated cytotoxicity	BP	0.9999999999	BP negative regulation of natural killer cell mediated cytotoxicity	Cluster-22148.115467
+GO:0035900	0.00167383792902993	0.99999881296118	1	7	response to isolation stress	BP	0.9999999999	BP response to isolation stress	Cluster-22148.178334
+GO:0004719	0.0022451767428168	0.999997757098679	1	10	protein-L-isoaspartate (D-aspartate) O-methyltransferase activity	MF	0.9999999999	MF protein-L-isoaspartate (D-aspartate) O-methyltransferase activity	Cluster-22148.155473
+GO:0002223	0.00246864579639131	0.999997260796823	1	11	stimulatory C-type lectin receptor signaling pathway	BP	0.9999999999	BP stimulatory C-type lectin receptor signaling pathway	Cluster-22148.115467
+GO:0002837	0.00257934491108317	0.999997009503848	1	11	regulation of immune response to tumor cell	BP	0.9999999999	BP regulation of immune response to tumor cell	Cluster-22148.115467
+GO:0002228	0.00263114306136408	0.99999688812871	1	11	natural killer cell mediated immunity	BP	0.9999999999	BP natural killer cell mediated immunity	Cluster-22148.115467
+GO:0042267	0.00263114306136408	0.99999688812871	1	11	natural killer cell mediated cytotoxicity	BP	0.9999999999	BP natural killer cell mediated cytotoxicity	Cluster-22148.115467
+GO:0010340	0.00268546915942502	0.999996731241176	1	12	carboxyl-O-methyltransferase activity	MF	0.9999999999	MF carboxyl-O-methyltransferase activity	Cluster-22148.155473
+GO:0051998	0.00268546915942502	0.999996731241176	1	12	protein carboxyl O-methyltransferase activity	MF	0.9999999999	MF protein carboxyl O-methyltransferase activity	Cluster-22148.155473
+GO:1901623	0.0027402961877985	0.99999659633921	1	12	regulation of lymphocyte chemotaxis	BP	0.9999999999	BP regulation of lymphocyte chemotaxis	Cluster-22148.115467
+GO:0002834	0.00278578934061847	0.999996482330467	1	12	regulation of response to tumor cell	BP	0.9999999999	BP regulation of response to tumor cell	Cluster-22148.115467
+GO:0002717	0.00393708607846577	0.999992783328669	1	17	positive regulation of natural killer cell mediated immunity	BP	0.9999999999	BP positive regulation of natural killer cell mediated immunity	Cluster-22148.115467
+GO:0045954	0.00393708607846577	0.999992783328669	1	17	positive regulation of natural killer cell mediated cytotoxicity	BP	0.9999999999	BP positive regulation of natural killer cell mediated cytotoxicity	Cluster-22148.115467
+GO:2000402	0.00432743884635207	0.999991222847996	1	19	negative regulation of lymphocyte migration	BP	0.9999999999	BP negative regulation of lymphocyte migration	Cluster-22148.115467
+GO:0002715	0.00510605492018924	0.999987684402212	1	22	regulation of natural killer cell mediated immunity	BP	0.9999999999	BP regulation of natural killer cell mediated immunity	Cluster-22148.115467
+GO:0042269	0.00510605492018924	0.999987684402212	1	22	regulation of natural killer cell mediated cytotoxicity	BP	0.9999999999	BP regulation of natural killer cell mediated cytotoxicity	Cluster-22148.115467
+GO:0003994	0.00530422009373354	0.999986708987503	1	22	aconitate hydratase activity	MF	0.9999999999	MF aconitate hydratase activity	Cluster-22148.178334
+GO:0051538	0.00624144272971982	0.999981456456635	1	26	3 iron, 4 sulfur cluster binding	MF	0.9999999999	MF 3 iron, 4 sulfur cluster binding	Cluster-22148.178334
+GO:0006102	0.00665083809702556	0.999978880946852	1	28	isocitrate metabolic process	BP	0.9999999999	BP isocitrate metabolic process	Cluster-22148.178334
+GO:0019773	0.00678931737424312	0.999977963222142	1	29	proteasome core complex, alpha-subunit complex	CC	0.9999999999	CC proteasome core complex, alpha-subunit complex	Cluster-22148.264169
+GO:0008171	0.00780267114145437	0.999970731127247	1	34	O-methyltransferase activity	MF	0.9999999999	MF O-methyltransferase activity	Cluster-22148.155473
+GO:0001911	0.00827205840639561	0.999967098344344	1	34	negative regulation of leukocyte mediated cytotoxicity	BP	0.9999999999	BP negative regulation of leukocyte mediated cytotoxicity	Cluster-22148.115467
+GO:0001909	0.0083047253697961	0.999966808957207	1	35	leukocyte mediated cytotoxicity	BP	0.9999999999	BP leukocyte mediated cytotoxicity	Cluster-22148.115467
+GO:0031342	0.00872394586434959	0.999963338227122	1	36	negative regulation of cell killing	BP	0.9999999999	BP negative regulation of cell killing	Cluster-22148.115467
+GO:0002689	0.009371202400771	0.999957539788061	1	41	negative regulation of leukocyte chemotaxis	BP	0.9999999999	BP negative regulation of leukocyte chemotaxis	Cluster-22148.115467
+GO:2000401	0.00954927997077614	0.999955881850482	1	42	regulation of lymphocyte migration	BP	0.9999999999	BP regulation of lymphocyte migration	Cluster-22148.115467
+GO:0001912	0.0114636466317456	0.999936184254926	1	48	positive regulation of leukocyte mediated cytotoxicity	BP	0.9999999999	BP positive regulation of leukocyte mediated cytotoxicity	Cluster-22148.115467
+GO:0002449	0.0122873184986219	0.999926543879315	1	52	lymphocyte mediated immunity	BP	0.9999999999	BP lymphocyte mediated immunity	Cluster-22148.115467
+GO:0031343	0.0126180432506155	0.99992249895627	1	53	positive regulation of cell killing	BP	0.9999999999	BP positive regulation of cell killing	Cluster-22148.115467
+GO:0001910	0.0126238883457546	0.999922426980362	1	53	regulation of leukocyte mediated cytotoxicity	BP	0.9999999999	BP regulation of leukocyte mediated cytotoxicity	Cluster-22148.115467
+GO:0005839	0.0126659612238868	0.999921880215908	1	54	proteasome core complex	CC	0.9999999999	CC proteasome core complex	Cluster-22148.264169
+GO:0006479	0.0147160224747216	0.999894160797688	1	64	protein methylation	BP	0.9999999999	BP protein methylation	Cluster-22148.155473
+GO:0008213	0.0147160224747216	0.999894160797688	1	64	protein alkylation	BP	0.9999999999	BP protein alkylation	Cluster-22148.155473
+GO:0031341	0.0149424575465743	0.99989089745591	1	63	regulation of cell killing	BP	0.9999999999	BP regulation of cell killing	Cluster-22148.115467
+GO:0002686	0.0176261703129475	0.999847603563644	1	77	negative regulation of leukocyte migration	BP	0.9999999999	BP negative regulation of leukocyte migration	Cluster-22148.115467
+GO:0002832	0.0181200192701419	0.999838889742515	1	78	negative regulation of response to biotic stimulus	BP	0.9999999999	BP negative regulation of response to biotic stimulus	Cluster-22148.115467
+GO:0002443	0.0185683861163944	0.999830764096428	1	79	leukocyte mediated immunity	BP	0.9999999999	BP leukocyte mediated immunity	Cluster-22148.115467
+GO:0002708	0.0210531529408485	0.999781914257616	1	90	positive regulation of lymphocyte mediated immunity	BP	0.9999999999	BP positive regulation of lymphocyte mediated immunity	Cluster-22148.115467
+GO:0050922	0.0220142459792884	0.999761302598566	1	96	negative regulation of chemotaxis	BP	0.9999999999	BP negative regulation of chemotaxis	Cluster-22148.115467
+GO:0043209	0.0220291402835517	0.999761004551705	1	95	myelin sheath	CC	0.9999999999	CC myelin sheath	Cluster-22148.178334
+GO:0002688	0.0223531168379304	0.999753816044559	1	98	regulation of leukocyte chemotaxis	BP	0.9999999999	BP regulation of leukocyte chemotaxis	Cluster-22148.115467
+GO:0050848	0.022796293895461	0.999743891766372	1	99	regulation of calcium-mediated signaling	BP	0.9999999999	BP regulation of calcium-mediated signaling	Cluster-22148.155473
+GO:0002220	0.025678444067471	0.999674439291702	1	108	innate immune response activating cell surface receptor signaling pathway	BP	0.9999999999	BP innate immune response activating cell surface receptor signaling pathway	Cluster-22148.115467
+GO:0008276	0.0275216563621104	0.999625438500348	1	120	protein methyltransferase activity	MF	0.9999999999	MF protein methyltransferase activity	Cluster-22148.155473
+GO:0002705	0.0280402006288945	0.999611094425207	1	121	positive regulation of leukocyte mediated immunity	BP	0.9999999999	BP positive regulation of leukocyte mediated immunity	Cluster-22148.115467
+GO:0045824	0.0329312276039943	0.999461995876611	1	143	negative regulation of innate immune response	BP	0.9999999999	BP negative regulation of innate immune response	Cluster-22148.115467
+GO:0051539	0.033275247981987	0.999450657779292	1	142	4 iron, 4 sulfur cluster binding	MF	0.9999999999	MF 4 iron, 4 sulfur cluster binding	Cluster-22148.178334
+GO:0002707	0.0377080351628426	0.999292846978897	1	162	negative regulation of lymphocyte mediated immunity	BP	0.9999999999	BP negative regulation of lymphocyte mediated immunity	Cluster-22148.115467
+GO:0016836	0.0396072063074146	0.999219079799224	1	170	hydro-lyase activity	MF	0.9999999999	MF hydro-lyase activity	Cluster-22148.178334
+GO:0002704	0.0397499568082136	0.999213374544404	1	171	negative regulation of leukocyte mediated immunity	BP	0.9999999999	BP negative regulation of leukocyte mediated immunity	Cluster-22148.115467
+GO:0043414	0.0398383732387001	0.999209742093955	1	175	macromolecule methylation	BP	0.9999999999	BP macromolecule methylation	Cluster-22148.155473
+GO:0002685	0.0406348939872021	0.999177467793187	1	180	regulation of leukocyte migration	BP	0.9999999999	BP regulation of leukocyte migration	Cluster-22148.115467
+GO:0019903	0.0416859785533583	0.999134021476253	1	181	protein phosphatase binding	MF	0.9999999999	MF protein phosphatase binding	Cluster-22148.115467
+GO:0006099	0.0438422576451904	0.999041225988256	1	187	tricarboxylic acid cycle	BP	0.9999999999	BP tricarboxylic acid cycle	Cluster-22148.178334
+GO:0006101	0.0438422576451904	0.999041225988256	1	187	citrate metabolic process	BP	0.9999999999	BP citrate metabolic process	Cluster-22148.178334
+GO:0016835	0.0461533766773377	0.998936280837419	1	199	carbon-oxygen lyase activity	MF	0.9999999999	MF carbon-oxygen lyase activity	Cluster-22148.178334
+GO:0001889	0.0475081262560954	0.998872140120859	1	208	liver development	BP	0.9999999999	BP liver development	Cluster-22148.178334
+GO:0072350	0.0478219859006583	0.998857142475327	1	205	tricarboxylic acid metabolic process	BP	0.9999999999	BP tricarboxylic acid metabolic process	Cluster-22148.178334
+GO:0001906	0.0498059715558211	0.998759155329099	1	217	cell killing	BP	0.9999999999	BP cell killing	Cluster-22148.115467

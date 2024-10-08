@@ -1,0 +1,57 @@
+Category	ID	Term	Genes	adj_pval
+MF	GO:0050660	flavin adenine dinucleotide binding	Cluster-70493.0	0.9999999999
+MF	GO:0050661	NADP binding	Cluster-70493.0	0.9999999999
+BP	GO:0001525	angiogenesis	Cluster-70493.0	0.9999999999
+BP	GO:0055085	transmembrane transport	Cluster-70493.0	0.9999999999
+BP	GO:2000379	positive regulation of reactive oxygen species metabolic process	Cluster-70493.0	0.9999999999
+MF	GO:0015252	proton channel activity	Cluster-70493.0	0.9999999999
+BP	GO:0008219	cell death	Cluster-70493.0	0.9999999999
+MF	GO:0015075	monoatomic ion transmembrane transporter activity	Cluster-70493.0	0.9999999999
+CC	GO:0005783	endoplasmic reticulum	Cluster-70493.0	0.9999999999
+CC	GO:0043020	NADPH oxidase complex	Cluster-70493.0	0.9999999999
+BP	GO:0006812	monoatomic cation transport	Cluster-70493.0	0.9999999999
+BP	GO:0080154	regulation of fertilization	Cluster-70493.0	0.9999999999
+BP	GO:0072593	reactive oxygen species metabolic process	Cluster-70493.0	0.9999999999
+MF	GO:0016651	oxidoreductase activity, acting on NAD(P)H	Cluster-70493.0	0.9999999999
+BP	GO:0006915	apoptotic process	Cluster-70493.0	0.9999999999
+MF	GO:0016175	superoxide-generating NAD(P)H oxidase activity	Cluster-70493.0	0.9999999999
+BP	GO:0008283	cell population proliferation	Cluster-70493.0	0.9999999999
+MF	GO:0016491	oxidoreductase activity	Cluster-70493.0	0.9999999999
+BP	GO:0001819	positive regulation of cytokine production	Cluster-70493.0	0.9999999999
+BP	GO:0098660	inorganic ion transmembrane transport	Cluster-70493.0	0.9999999999
+MF	GO:0008324	monoatomic cation transmembrane transporter activity	Cluster-70493.0	0.9999999999
+BP	GO:2000241	regulation of reproductive process	Cluster-70493.0	0.9999999999
+MF	GO:0005215	transporter activity	Cluster-70493.0	0.9999999999
+BP	GO:0022402	cell cycle process	Cluster-70493.0	0.9999999999
+BP	GO:0034220	monoatomic ion transmembrane transport	Cluster-70493.0	0.9999999999
+BP	GO:0001935	endothelial cell proliferation	Cluster-70493.0	0.9999999999
+BP	GO:0061640	cytoskeleton-dependent cytokinesis	Cluster-70493.0	0.9999999999
+BP	GO:0043012	regulation of fusion of sperm to egg plasma membrane	Cluster-70493.0	0.9999999999
+BP	GO:0042554	superoxide anion generation	Cluster-70493.0	0.9999999999
+MF	GO:0050664	oxidoreductase activity, acting on NAD(P)H, oxygen as acceptor	Cluster-70493.0	0.9999999999
+BP	GO:0000910	cytokinesis	Cluster-70493.0	0.9999999999
+MF	GO:0106292	superoxide-generating NADPH oxidase activity	Cluster-70493.0	0.9999999999
+BP	GO:0098655	monoatomic cation transmembrane transport	Cluster-70493.0	0.9999999999
+MF	GO:0022857	transmembrane transporter activity	Cluster-70493.0	0.9999999999
+BP	GO:1902600	proton transmembrane transport	Cluster-70493.0	0.9999999999
+BP	GO:0031325	positive regulation of cellular metabolic process	Cluster-70493.0	0.9999999999
+BP	GO:2000377	regulation of reactive oxygen species metabolic process	Cluster-70493.0	0.9999999999
+CC	GO:0005789	endoplasmic reticulum membrane	Cluster-70493.0	0.9999999999
+BP	GO:0012501	programmed cell death	Cluster-70493.0	0.9999999999
+BP	GO:0006952	defense response	Cluster-70493.0	0.9999999999
+MF	GO:0022803	passive transmembrane transporter activity	Cluster-70493.0	0.9999999999
+BP	GO:0006811	monoatomic ion transport	Cluster-70493.0	0.9999999999
+MF	GO:0015267	channel activity	Cluster-70493.0	0.9999999999
+MF	GO:0005216	monoatomic ion channel activity	Cluster-70493.0	0.9999999999
+MF	GO:0005509	calcium ion binding	Cluster-70493.0	0.9999999999
+CC	GO:1902494	catalytic complex	Cluster-70493.0	0.9999999999
+BP	GO:0050673	epithelial cell proliferation	Cluster-70493.0	0.9999999999
+BP	GO:0001817	regulation of cytokine production	Cluster-70493.0	0.9999999999
+BP	GO:0051240	positive regulation of multicellular organismal process	Cluster-70493.0	0.9999999999
+MF	GO:0020037	heme binding	Cluster-70493.0	0.9999999999
+BP	GO:0006801	superoxide metabolic process	Cluster-70493.0	0.9999999999
+MF	GO:0005261	monoatomic cation channel activity	Cluster-70493.0	0.9999999999
+BP	GO:0098662	inorganic cation transmembrane transport	Cluster-70493.0	0.9999999999
+MF	GO:0046906	tetrapyrrole binding	Cluster-70493.0	0.9999999999
+BP	GO:0048646	anatomical structure formation involved in morphogenesis	Cluster-70493.0	0.9999999999
+CC	GO:1990204	oxidoreductase complex	Cluster-70493.0	0.9999999999

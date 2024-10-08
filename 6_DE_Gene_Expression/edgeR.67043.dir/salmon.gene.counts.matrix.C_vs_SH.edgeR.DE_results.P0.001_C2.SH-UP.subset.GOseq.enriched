@@ -1,0 +1,69 @@
+category	over_represented_pvalue	under_represented_pvalue	numDEInCat	numInCat	term	ontology	over_represented_FDR	go_term	gene_ids
+GO:0043012	0.000642884167620584	0.99999983848261	1	43	regulation of fusion of sperm to egg plasma membrane	BP	0.9999999999	BP regulation of fusion of sperm to egg plasma membrane	Cluster-70493.0
+GO:0106292	0.000687713334348619	0.999999814881273	1	46	superoxide-generating NADPH oxidase activity	MF	0.9999999999	MF superoxide-generating NADPH oxidase activity	Cluster-70493.0
+GO:0016175	0.000852111291630065	0.99999971455978	1	57	superoxide-generating NAD(P)H oxidase activity	MF	0.9999999999	MF superoxide-generating NAD(P)H oxidase activity	Cluster-70493.0
+GO:0043020	0.000852111291630065	0.99999971455978	1	57	NADPH oxidase complex	CC	0.9999999999	CC NADPH oxidase complex	Cluster-70493.0
+GO:0015252	0.000852119183952134	0.999999714554491	1	57	proton channel activity	MF	0.9999999999	MF proton channel activity	Cluster-70493.0
+GO:0080154	0.00092684241146247	0.999999661801025	1	62	regulation of fertilization	BP	0.9999999999	BP regulation of fertilization	Cluster-70493.0
+GO:0050664	0.000956717602434472	0.999999639458184	1	64	oxidoreductase activity, acting on NAD(P)H, oxygen as acceptor	MF	0.9999999999	MF oxidoreductase activity, acting on NAD(P)H, oxygen as acceptor	Cluster-70493.0
+GO:0042554	0.0010762432575922	0.999999542917016	1	72	superoxide anion generation	BP	0.9999999999	BP superoxide anion generation	Cluster-70493.0
+GO:0001935	0.0014198734998536	0.999999201616396	1	95	endothelial cell proliferation	BP	0.9999999999	BP endothelial cell proliferation	Cluster-70493.0
+GO:0006801	0.00197238013270403	0.999998454451061	1	132	superoxide metabolic process	BP	0.9999999999	BP superoxide metabolic process	Cluster-70493.0
+GO:2000379	0.00246504061111554	0.999997581768116	1	165	positive regulation of reactive oxygen species metabolic process	BP	0.9999999999	BP positive regulation of reactive oxygen species metabolic process	Cluster-70493.0
+GO:0000910	0.00328567022794423	0.999995695704226	1	220	cytokinesis	BP	0.9999999999	BP cytokinesis	Cluster-70493.0
+GO:0061640	0.00328567022794423	0.999995695704226	1	220	cytoskeleton-dependent cytokinesis	BP	0.9999999999	BP cytoskeleton-dependent cytokinesis	Cluster-70493.0
+GO:0006818	0.00340499083676662	0.999995376440939	1	228	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0015992	0.00340499083676662	0.999995376440939	1	228	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:1902600	0.00340499083676662	0.999995376440939	1	228	proton transmembrane transport	BP	0.9999999999	BP proton transmembrane transport	Cluster-70493.0
+GO:0050661	0.00388214319893275	0.999993985408663	1	260	NADP binding	MF	0.9999999999	MF NADP binding	Cluster-70493.0
+GO:2000241	0.00394176080305568	0.999993798748485	1	264	regulation of reproductive process	BP	0.9999999999	BP regulation of reproductive process	Cluster-70493.0
+GO:0072593	0.00419510596762801	0.999992973667297	1	281	reactive oxygen species metabolic process	BP	0.9999999999	BP reactive oxygen species metabolic process	Cluster-70493.0
+GO:2000377	0.0042994609261396	0.999992618804099	1	288	regulation of reactive oxygen species metabolic process	BP	0.9999999999	BP regulation of reactive oxygen species metabolic process	Cluster-70493.0
+GO:0050673	0.0044038076590101	0.999992255212757	1	295	epithelial cell proliferation	BP	0.9999999999	BP epithelial cell proliferation	Cluster-70493.0
+GO:1990204	0.00494013812635576	0.999990248192976	1	331	oxidoreductase complex	CC	0.9999999999	CC oxidoreductase complex	Cluster-70493.0
+GO:0016651	0.00561028512918055	0.999987415061224	1	376	oxidoreductase activity, acting on NAD(P)H	MF	0.9999999999	MF oxidoreductase activity, acting on NAD(P)H	Cluster-70493.0
+GO:0005261	0.00617574137236391	0.999984743167972	1	414	monoatomic cation channel activity	MF	0.9999999999	MF monoatomic cation channel activity	Cluster-70493.0
+GO:0050660	0.00700890319671353	0.999980336674495	1	470	flavin adenine dinucleotide binding	MF	0.9999999999	MF flavin adenine dinucleotide binding	Cluster-70493.0
+GO:0001819	0.00846528336730733	0.999971288626958	1	568	positive regulation of cytokine production	BP	0.9999999999	BP positive regulation of cytokine production	Cluster-70493.0
+GO:0001525	0.00849445119099705	0.999971089913143	1	570	angiogenesis	BP	0.9999999999	BP angiogenesis	Cluster-70493.0
+GO:0020037	0.00867331133720383	0.999969856365542	1	582	heme binding	MF	0.9999999999	MF heme binding	Cluster-70493.0
+GO:0005216	0.00888104764945078	0.999968391199768	1	596	monoatomic ion channel activity	MF	0.9999999999	MF monoatomic ion channel activity	Cluster-70493.0
+GO:0022838	0.00899982837370718	0.999967537758944	1	604	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0046906	0.00919297538278072	0.999966125633616	1	617	tetrapyrrole binding	MF	0.9999999999	MF tetrapyrrole binding	Cluster-70493.0
+GO:0015267	0.00983095962584327	0.999961246733496	1	660	channel activity	MF	0.9999999999	MF channel activity	Cluster-70493.0
+GO:0022803	0.00984579645629053	0.999961129351272	1	661	passive transmembrane transporter activity	MF	0.9999999999	MF passive transmembrane transporter activity	Cluster-70493.0
+GO:0043900	0.0103947204371569	0.999956661225375	1	698	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0015672	0.0108544044591896	0.999952731703509	1	729	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0008283	0.0117579580249036	0.99994450855437	1	790	cell population proliferation	BP	0.9999999999	BP cell population proliferation	Cluster-70493.0
+GO:0001817	0.0122470297315522	0.999939781279445	1	823	regulation of cytokine production	BP	0.9999999999	BP regulation of cytokine production	Cluster-70493.0
+GO:0098662	0.0122766030251069	0.999939489203725	1	825	inorganic cation transmembrane transport	BP	0.9999999999	BP inorganic cation transmembrane transport	Cluster-70493.0
+GO:0050662	0.0124988195273731	0.999937271805194	1	840	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0098655	0.0136233462765556	0.999925435435284	1	916	monoatomic cation transmembrane transport	BP	0.9999999999	BP monoatomic cation transmembrane transport	Cluster-70493.0
+GO:0098660	0.0139782904569372	0.999921485946898	1	940	inorganic ion transmembrane transport	BP	0.9999999999	BP inorganic ion transmembrane transport	Cluster-70493.0
+GO:0006915	0.0150573093201047	0.999908849989933	1	1013	apoptotic process	BP	0.9999999999	BP apoptotic process	Cluster-70493.0
+GO:0022402	0.0153966345208488	0.999904680295306	1	1036	cell cycle process	BP	0.9999999999	BP cell cycle process	Cluster-70493.0
+GO:0048037	0.0156777275967106	0.999901155105866	1	1055	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0008219	0.016474810239837	0.999890808466725	1	1109	cell death	BP	0.9999999999	BP cell death	Cluster-70493.0
+GO:0012501	0.016474810239837	0.999890808466725	1	1109	programmed cell death	BP	0.9999999999	BP programmed cell death	Cluster-70493.0
+GO:0034220	0.0189808256052698	0.999854898722914	1	1279	monoatomic ion transmembrane transport	BP	0.9999999999	BP monoatomic ion transmembrane transport	Cluster-70493.0
+GO:0006812	0.0218345306014398	0.999807745528671	1	1473	monoatomic cation transport	BP	0.9999999999	BP monoatomic cation transport	Cluster-70493.0
+GO:0008324	0.0232003437528037	0.999782811830946	1	1566	monoatomic cation transmembrane transporter activity	MF	0.9999999999	MF monoatomic cation transmembrane transporter activity	Cluster-70493.0
+GO:0048646	0.0243579108629981	0.99976047810066	1	1645	anatomical structure formation involved in morphogenesis	BP	0.9999999999	BP anatomical structure formation involved in morphogenesis	Cluster-70493.0
+GO:0005789	0.0247108481733363	0.999753449071661	1	1669	endoplasmic reticulum membrane	CC	0.9999999999	CC endoplasmic reticulum membrane	Cluster-70493.0
+GO:0005783	0.0266297559553956	0.999713434355771	1	1800	endoplasmic reticulum	CC	0.9999999999	CC endoplasmic reticulum	Cluster-70493.0
+GO:0006952	0.0284572370317601	0.99967249750563	1	1925	defense response	BP	0.9999999999	BP defense response	Cluster-70493.0
+GO:0055085	0.0284575394294258	0.999672490504812	1	1925	transmembrane transport	BP	0.9999999999	BP transmembrane transport	Cluster-70493.0
+GO:0015075	0.0293196408102663	0.999652218826217	1	1984	monoatomic ion transmembrane transporter activity	MF	0.9999999999	MF monoatomic ion transmembrane transporter activity	Cluster-70493.0
+GO:0022891	0.0313185135451887	0.999602845033338	1	2121	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0044432	0.0326588064677125	0.99956787933775	1	2213	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0006811	0.0331538212048399	0.999554587301408	1	2247	monoatomic ion transport	BP	0.9999999999	BP monoatomic ion transport	Cluster-70493.0
+GO:0022892	0.0349284369655927	0.999505257172848	1	2369	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0022857	0.0349576726747222	0.999504422491783	1	2371	transmembrane transporter activity	MF	0.9999999999	MF transmembrane transporter activity	Cluster-70493.0
+GO:0051240	0.0368017416362788	0.999450330986539	1	2498	positive regulation of multicellular organismal process	BP	0.9999999999	BP positive regulation of multicellular organismal process	Cluster-70493.0
+GO:0005215	0.0382233888430236	0.999406688038677	1	2596	transporter activity	MF	0.9999999999	MF transporter activity	Cluster-70493.0
+GO:0005509	0.0386132150973818	0.999394424946024	1	2623	calcium ion binding	MF	0.9999999999	MF calcium ion binding	Cluster-70493.0
+GO:1902494	0.0400338270257076	0.99934865658223	1	2721	catalytic complex	CC	0.9999999999	CC catalytic complex	Cluster-70493.0
+GO:0016491	0.0402658718817646	0.999341019686306	1	2737	oxidoreductase activity	MF	0.9999999999	MF oxidoreductase activity	Cluster-70493.0
+GO:0031325	0.0468602030213035	0.999105024776791	1	3194	positive regulation of cellular metabolic process	BP	0.9999999999	BP positive regulation of cellular metabolic process	Cluster-70493.0
+GO:0044459	0.0492463597097959	0.999010566335874	1	3360	NA	NA	0.9999999999	none	Cluster-70493.0
+GO:0044765	0.0499070031159272	0.998983559273508	1	3406	NA	NA	0.9999999999	none	Cluster-70493.0

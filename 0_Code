@@ -363,7 +363,7 @@ module load conda
 ../4_Final_Mapping/Leukoma.transcriptome-corset.fasta > Trinity.fasta.seq_lens
 
 /share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/util/misc/TPM_weighted_gene_length.py  \
---gene_trans_map clusters.txt \
+--gene_trans_map ../4_Final_Mapping/clusters.txt \
 --trans_lengths Trinity.fasta.seq_lens \
 --TPM_matrix ../4_Final_Mapping/salmon.isoform.TMM.EXPR.matrix > gene_lengths.txt
 
@@ -379,17 +379,14 @@ module load R # v.4.2.3
 module load salmon # v.1.10.1
 module load samtools # v.1.2.13
 
-# Run EdgeR Differential Gene Expression Analysis
-	# Performed on local computer
+#/share/apps/22.04/spack/spack-root/opt/spack/linux-ubuntu22.04-x86_64_v2/gcc-11.3.0/trinity-2.15.1.FULL-66gny6tfdrxt2gmxhgy5lgraqqciedrz/bin/Analysis/DifferentialExpression/run_DE_analysis.pl \
 /usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/run_DE_analysis.pl \
 --matrix ../4_Final_Mapping/salmon.gene.counts.matrix \
 --method edgeR \
 --samples_file ../2_Mapping/samples_file.txt
 
-# Move into new directory
-cd edgeR.67043.dir
-
 # Generate samples file
+
 echo -e "C\tC1_B1
 C\tC1_B2
 C\tC2_B1
@@ -416,7 +413,7 @@ SH\tSH4_B2
 SH\tSH2_B1" > samples.txt
 
 # Extracting and clustering differentially expressed transcripts
-	# Performed on local computer
+	# Performed on local computer; errors generated on Peloton
 /usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
 --matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
 --samples samples.txt --examine_GO_enrichment --GO_annots ../../5_Trinotate/go_annotations.txt --gene_lengths ../../5_Trinotate/gene_lengths.txt --include_GOplot
@@ -428,38 +425,6 @@ SH\tSH2_B1" > samples.txt
 --output PtR_Plots \
 --prin_comp 4 --sample_cor_matrix \
 --center_rows --log2
-
-# Second analysis -- treat all "non-OA" samples as one condition
-
-echo -e "not_OA\tC1_B1
-not_OA\tC1_B2
-not_OA\tC2_B1
-not_OA\tC2_B2
-not_OA\tC3_B1
-not_OA\tC4_B2
-OA\tOA2_B1
-OA\tOA2_B2
-OA\tOA3_B1
-OA\tOA3_B2
-OA\tOA4_B1
-OA\tOA4_B2
-not_OA\tOASH1_B1
-not_OA\tOASH1_B2
-not_OA\tOASH2_B1
-not_OA\tOASH2_B2
-not_OA\tOASH4_B1
-not_OA\tOASH4_B2
-not_OA\tSH1_B1
-not_OA\tSH2_B2
-not_OA\tSH3_B2
-not_OA\tSH4_B1
-not_OA\tSH4_B2
-not_OA\tSH2_B1" > samples-second_analysis.txt
-
-/usr/local/Cellar/trinity/2.11.0/libexec/Analysis/DifferentialExpression/analyze_diff_expr.pl \
---matrix ../../4_Final_Mapping/salmon.gene.TMM.EXPR.matrix \
---samples samples-second_analysis.txt --examine_GO_enrichment --GO_annots ../../5_Trinotate/go_annotations.txt --gene_lengths ../../5_Trinotate/gene_lengths.txt \
---output DE_results-Try2.P${Pvalue}_C${C}
 
 # Get list of differentially expressed transcripts for Blast2Go
 
@@ -553,3 +518,18 @@ tar -czvf Leukoma_Trinotate_Report.tsv.tar.gz --remove-files Leukoma_Trinotate_R
 tar -czvf go_annotations.txt.tar.gz --remove-files go_annotations.txt
 tar -czvf Leukoma.transcriptome-corset.fasta.transdecoder.pep.tar.gz --remove-files Leukoma.transcriptome-corset.fasta.transdecoder.pep
 
+# Cleanup 6_DE_Gene_Expression
+cd ../6_DE_Gene_Expression/edgeR.67043.dir
+# Remove volcano plots
+rm *Volcano.pdf
+# Compress DE_results files
+for i in *DE_results; do
+    tar -czvf "$i.tar.gz" $i
+done
+rm *DE_results
+# Compress count matrices
+
+for i in *count_matrix; do
+    tar -czvf "$i.tar.gz" $i
+done
+rm *count_matrix
