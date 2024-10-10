@@ -1,5 +1,5 @@
 {
-	"file": "http://vcg.github.io/upset/data/test/test.csv",
+	"file": "https://github.com/DavidGoldLab/2024_Leukoma_RNA-Seq/blob/main/7_DE_Genes/BLAST-UpSet_Data.txt",
 	"name": "Test",
 	"header": 0,
 	"separator": ";",
